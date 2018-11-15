@@ -14,9 +14,17 @@ func download(r Retriever)string{
 	return r.Get("http://www.baidu.com")
 }
 
+//接口变量自带指针；
+//接口变量同样可以采用值传递，几乎不需要使用接口的指针；
+//指针接受者（func(r* structName)Get）实现只能以指针方式使用，值接受者（实现的func(r structName)Get）都可以
+
+//a.(b)->将a强制转换为b类型；
+//interface{}---所有类型；
 
 func main() {
+	//var r*Retriever;
 	var r Retriever
+
 	//retriever :=xhxm.XhxmRetriever{"this is fake xhxm.com"}
 	//r = &retriever
 	//fmt.Println(download(r))
