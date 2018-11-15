@@ -62,8 +62,8 @@ func main() {
 		v.ShowName2()
 
 		//指针接管
-		cloneR :=v
-		cloneR.UserAgent = "xhxm333"
+		citeR :=v
+		citeR.UserAgent = "xhxm333"
 		fmt.Printf("type---%v\n",r)
 
 		//指针接管
@@ -76,5 +76,19 @@ func main() {
 		fmt.Printf("type---%T",r)
 		v.ShowName()
 
+	}
+
+	if citeR,ok :=r.(*real.Retriever2);ok  {
+		fmt.Printf("*rel.Retrever2---%T---%s\n",citeR,citeR.UserAgent)
+	}else
+	{
+		fmt.Println("not a *real.Retriever2")
+	}
+
+	if citeR,ok :=r.(xhxm.XhxmRetriever);ok  {
+		fmt.Printf("xhxm.XhxmRetriever---%T---%s\n",citeR,citeR.Contents)
+	}else
+	{
+		fmt.Println("not a xhxm.XhxmRetriever")
 	}
 }
