@@ -34,17 +34,20 @@ func main() {
 
 	fmt.Println("闭包的应用----斐波那契数列")
 
-	f:=fibonacci()
-	println(f())
-	println(f())
-	println(f())
-	println(f())
-	println(f())
-	println(f())
-	println(f())
-	println(f())
+	fibonacciText()
 
+}
 
+func fibonacciText() {
+	f := fibonacci()
+	println(f())
+	println(f())
+	println(f())
+	println(f())
+	println(f())
+	println(f())
+	println(f())
+	println(f())
 }
 
 func fibonacci() func()int{
