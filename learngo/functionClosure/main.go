@@ -4,7 +4,9 @@ import "fmt"
 
 //函数返回一个闭包函数
 //闭包函数对于外层函数的sum具有存储功能；
-func Adder()func (int)int{
+//shift + fn + F6 整体替换
+//alt + command + M独立一块代码
+func Adder2()func (int)int{
 	sum :=0
 	return func (v int)int{
 		sum +=v
@@ -15,7 +17,7 @@ func Adder()func (int)int{
 func main() {
 	//获取闭包中的func
 	fmt.Printf("第一个闭包函数对象------------\n")
-	functionClosure :=Adder()
+	functionClosure := Adder2()
 	fmt.Println(functionClosure(1))
 	fmt.Println(functionClosure(1))
 	fmt.Println(functionClosure(1))
@@ -23,7 +25,7 @@ func main() {
 	fmt.Println(functionClosure(1))
 
 	fmt.Printf("\n第二个闭包函数对象------------\n")
-	functionClosure2:=Adder()
+	functionClosure2:= Adder2()
 	fmt.Println(functionClosure2(1))
 
 }
