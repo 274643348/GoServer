@@ -72,7 +72,8 @@ func errWrapper(handler appHandler)func(writer http.ResponseWriter, request *htt
 //将业务逻辑提出来
 func filelistingserver2(){
 
-	http.HandleFunc("/liu/", errWrapper(filelisting.HandlerFileList))
+	//模拟接受所有用户---浏览器访问http://localhost:8888/abc---abc小于"/liu/"所以内部会报错
+	http.HandleFunc("/", errWrapper(filelisting.HandlerFileList))
 	err :=http.ListenAndServe(":8888",nil)
 	if  err != nil{
 		panic(err)
