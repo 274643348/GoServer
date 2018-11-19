@@ -45,6 +45,15 @@ type appHandler func(writer http.ResponseWriter, request *http.Request)error
 
 func errWrapper(handler appHandler)func(writer http.ResponseWriter, request *http.Request){
 	return func(writer http.ResponseWriter, request *http.Request) {
+		//自己处理panic
+		defer func(){
+			r:=recover()
+			log.Printf("Panic:%v",r)
+			http.Error(writer,http.StatusText(http.StatusInternalServerError),http.StatusInternalServerError)
+
+		}()
+
+
 		err:=handler(writer,request)
 		if err!=nil {
 
