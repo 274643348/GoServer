@@ -61,6 +61,12 @@ func errWrapper(handler appHandler)func(writer http.ResponseWriter, request *htt
 		if err!=nil {
 
 			log.Printf("Error occurred handling request: %s",err.Error())
+
+			if userError,ok:=err.(userError);ok {
+				http.Error(writer,userError.Message(),http.StatusBadRequest)
+				return
+			}
+
 			code:=http.StatusOK
 			switch {
 				case os.IsNotExist(err):{
@@ -91,6 +97,12 @@ func filelistingserver2(){
 	if  err != nil{
 		panic(err)
 	}
+}
+
+//定义一个自己的error
+type userError interface {
+	error
+	Message()string
 }
 func main() {
 	filelistingserver2()
