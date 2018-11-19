@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab98b55-c523-491f-8521-93cbab66a5a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/errhanding/defer/defer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errhanding/error/error.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errhanding/fibonacci/fibonacci.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/node/node.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functionClosure/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/functionClosure/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/liu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errhanding/error/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/error/error.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,13 +41,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="6258" />
+          <entry key="go" value="6272" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="6258" />
+          <entry key="Go" value="6272" />
           <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
@@ -78,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/errhanding/error/error.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="16" selection-start-line="16" selection-end-line="17" />
+            <state relative-caret-position="175">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
                 <element signature="e#14#73#0" expanded="true" />
               </folding>
@@ -217,7 +211,7 @@
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542610129828" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542610250664" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -318,12 +312,12 @@
       <workItem from="1542264986465" duration="1649000" />
       <workItem from="1542266932831" duration="7939000" />
       <workItem from="1542335374840" duration="486000" />
-      <workItem from="1542606819252" duration="3239000" />
+      <workItem from="1542606819252" duration="3367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28503000" />
+    <option name="totallyTimeSpent" value="28631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,13 +341,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59731543" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32103825" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32103825" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.397541" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3306011" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3306011" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -566,8 +560,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/errhanding/error/error.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="16" selection-start-line="16" selection-end-line="17" />
+        <state relative-caret-position="175">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
             <element signature="e#14#73#0" expanded="true" />
           </folding>

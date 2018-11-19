@@ -13,7 +13,7 @@ func tryErrorWriteFile(filename string){
 	//file,err:=os.Create(filename)
 	file,err:=os.OpenFile(filename, os.O_EXCL|os.O_CREATE, 0666)
 
-	//自己的err（针对不同的err做不同的处理）
+	//自己的err（针对不同的err,转成对应的类型，做不同的处理）
 	//err = errors.New("this is a custom error")
 
 	if err != nil {
