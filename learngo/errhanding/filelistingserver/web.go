@@ -39,6 +39,8 @@ func filelistingserver1(){
 	}
 }
 
+
+//第二版剥离业务逻辑到其他文件
 type appHandler func(writer http.ResponseWriter, request *http.Request)error
 
 func errWrapper(handler appHandler)func(writer http.ResponseWriter, request *http.Request){
@@ -64,6 +66,7 @@ func errWrapper(handler appHandler)func(writer http.ResponseWriter, request *htt
 		}
 	}
 }
+
 
 
 //将业务逻辑提出来
