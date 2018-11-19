@@ -1,13 +1,21 @@
 package filelisting
 
 import (
+	"errors"
 	"io/ioutil"
 	"net/http"
 	"os"
+	"strings"
 )
 
+
+const prefix = "/liu/"
 func HandlerFileList(writer http.ResponseWriter, request *http.Request) error{
-	path :=request.URL.Path[len("/liu/"):]
+
+	if strings.Index(request.URL.Path,prefix)!=0{
+		return  errors.New("Paht must start with"+prefix)
+	}
+	path :=request.URL.Path[len(prefix):]
 	file,err:=os.Open(path)
 	if err != nil {
 		return err

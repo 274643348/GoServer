@@ -48,6 +48,9 @@ func errWrapper(handler appHandler)func(writer http.ResponseWriter, request *htt
 		//自己处理panic
 		defer func(){
 			r:=recover()
+			if r==nil {
+				return
+			}
 			log.Printf("Panic:%v",r)
 			http.Error(writer,http.StatusText(http.StatusInternalServerError),http.StatusInternalServerError)
 
@@ -67,6 +70,7 @@ func errWrapper(handler appHandler)func(writer http.ResponseWriter, request *htt
 					code =http.StatusForbidden
 				}
 				default:{
+					//有些是可以给用户看的怎么处理
 					code = http.StatusInternalServerError
 				}
 			}
