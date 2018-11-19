@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"io"
+	"strings"
+)
 
 //函数返回一个闭包函数
 //闭包函数对于外层函数的sum具有存储功能；
@@ -14,6 +19,27 @@ func Adder2()func (int)int{
 	}
 }
 
+
+func fibonacci() intGen{
+	a,b:=0,1
+	return func() int{
+		a,b=b,a+b
+		return  a
+	}
+}
+
+
+
+func main() {
+	//Closure()
+
+	//fmt.Println("闭包的应用----斐波那契数列")
+	//fibonacciText()
+
+	fmt.Println("斐波那契数列---实现reader接口实现输出")
+	readerFibonacci()
+
+}
 
 func Closure() {
 	//获取闭包中的func
@@ -29,15 +55,6 @@ func Closure() {
 	fmt.Println(functionClosure2(1))
 }
 
-func main() {
-	//Closure()
-
-	fmt.Println("闭包的应用----斐波那契数列")
-
-	fibonacciText()
-
-}
-
 func fibonacciText() {
 	f := fibonacci()
 	println(f())
@@ -50,14 +67,29 @@ func fibonacciText() {
 	println(f())
 }
 
-func fibonacci() func()int{
-	a,b:=0,1
-	return func() int{
-		a,b=b,a+b
-		return  a
-	}
+func readerFibonacci(){
+	f := fibonacci()
+	printFileContents(f)
 }
 
 
+type intGen func() int
+
+func (g intGen) Read(p []byte) (n int, err error) {
+	 next :=g()
+	if next > 10000 {
+		return 0, io.EOF
+	}
+	 s := fmt.Sprintf("%d\n",next)
+	 return strings.NewReader(s).Read(p)
+}
+
+func printFileContents(reader io.Reader){
+	scanner := bufio.NewScanner(reader)
+
+	for scanner.Scan(){
+		fmt.Println(scanner.Text())
+	}
+}
 
 
