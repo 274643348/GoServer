@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab98b55-c523-491f-8521-93cbab66a5a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/testing/testfunc/targetfunc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/triangle_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goroutine/goroutine.go" beforeDir="false" afterPath="$PROJECT_DIR$/goroutine/goroutine.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +15,16 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/learngo$TestTriangle_in_triangle_test_go.out" NAME="TestTriangle in triangle_test.go Coverage Results" MODIFIED="1542792538971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/learngo$TestTriangleB_in_triangle_test_go.out" NAME="TestTriangleB in triangle_test.go Coverage Results" MODIFIED="1542792414112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="354" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-568377763">
@@ -30,25 +41,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="75" />
+          <entry key="go" value="77" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="75" />
+          <entry key="Go" value="77" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="9943" />
+          <entry key="go" value="10605" />
           <entry key="txt" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="9943" />
+          <entry key="Go" value="10605" />
           <entry key="PLAIN_TEXT" value="64" />
         </counts>
       </usages-collector>
@@ -61,32 +72,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/web.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/goroutine/goroutine.go">
+        <entry file="file://$PROJECT_DIR$/testing/triangle_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="84">
+              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
-                <element signature="e#14#50#0" expanded="true" />
+                <element signature="e#14#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handler.go">
+        <entry file="file://$PROJECT_DIR$/testing/testfunc/targetfunc.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="240">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding>
+                <element signature="e#18#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +101,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -144,6 +149,10 @@
         <option value="$PROJECT_DIR$/errhanding/filelistingserver/web.go" />
         <option value="$PROJECT_DIR$/errhanding/err.txt" />
         <option value="$PROJECT_DIR$/goroutine/goroutine.go" />
+        <option value="$PROJECT_DIR$/testing/add_test.go" />
+        <option value="$PROJECT_DIR$/testing/testfunc/targetfunc.go" />
+        <option value="$PROJECT_DIR$/testing/triangle_test.go" />
+        <option value="$PROJECT_DIR$/testing/triangle_tess.go" />
       </list>
     </option>
   </component>
@@ -153,10 +162,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="34" />
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1552" />
+    <option name="y" value="-331" />
+    <option name="width" value="1541" />
     <option name="height" value="824" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -206,6 +215,17 @@
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngo" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngo" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="testfunc" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -213,14 +233,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542784272479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542792458676" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -243,36 +263,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build goroutine.go">
-    <configuration name="go build defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/errhanding/defer/defer.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build error.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/errhanding/error/error.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestTriangle in triangle_test.go">
     <configuration name="go build goroutine.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/goroutine/goroutine.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build recover.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/errhanding/panicAndRecover/recover.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -284,20 +280,50 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestGriangle in triangle_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/testing" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/testing/triangle_test.go" />
+      <pattern value="^TestGriangle$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTriangle in triangle_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/testing" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/testing/triangle_test.go" />
+      <pattern value="^TestTriangle$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTriangleB in triangle_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/testing" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/testing/triangle_test.go" />
+      <pattern value="^TestTriangleB$" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Build.go build defer.go" />
-      <item itemvalue="Go Build.go build error.go" />
-      <item itemvalue="Go Build.go build recover.go" />
       <item itemvalue="Go Build.go build web.go" />
       <item itemvalue="Go Build.go build goroutine.go" />
+      <item itemvalue="Go Test.TestTriangle in triangle_test.go" />
+      <item itemvalue="Go Test.TestGriangle in triangle_test.go" />
+      <item itemvalue="Go Test.TestTriangleB in triangle_test.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestTriangle in triangle_test.go" />
+        <item itemvalue="Go Test.TestTriangleB in triangle_test.go" />
+        <item itemvalue="Go Test.TestGriangle in triangle_test.go" />
         <item itemvalue="Go Build.go build goroutine.go" />
         <item itemvalue="Go Build.go build web.go" />
-        <item itemvalue="Go Build.go build recover.go" />
-        <item itemvalue="Go Build.go build error.go" />
-        <item itemvalue="Go Build.go build defer.go" />
       </list>
     </recent_temporary>
   </component>
@@ -318,12 +344,44 @@
       <workItem from="1542266932831" duration="7939000" />
       <workItem from="1542335374840" duration="486000" />
       <workItem from="1542606819252" duration="13047000" />
-      <workItem from="1542780094052" duration="3466000" />
+      <workItem from="1542780094052" duration="7221000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 24m 46s.xml">
+      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 24m 51s.xml">
+      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangle_in_triangle_test_go - 2018.11.21 at 17h 24m 54s.xml">
+      <configuration name="TestTriangle in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 25m 55s.xml">
+      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 26m 36s.xml">
+      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 26m 46s.xml">
+      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 26m 52s.xml">
+      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 26m 54s.xml">
+      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangle_in_triangle_test_go - 2018.11.21 at 17h 27m 00s.xml">
+      <configuration name="TestTriangle in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTriangle_in_triangle_test_go - 2018.11.21 at 17h 27m 07s.xml">
+      <configuration name="TestTriangle in triangle_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41777000" />
+    <option name="totallyTimeSpent" value="45532000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,7 +393,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="6" />
+    <frame x="1552" y="-330" width="1440" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27038628" />
@@ -347,16 +405,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59731543" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8712446" weight="0.32103825" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8690987" visible="true" weight="0.32103825" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713877" weight="0.397541" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785408" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.490701" visible="true" weight="0.3306011" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.509299" side_tool="true" visible="true" weight="0.3306011" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4892704" weight="0.3306011" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.13090129" side_tool="true" visible="true" weight="0.32103825" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -381,6 +440,24 @@
           <url>file://$PROJECT_DIR$/functionClosure/main.go</url>
           <line>89</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/testing/testfunc/targetfunc.go</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/testing/triangle_test.go</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/testing/triangle_test.go</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -599,17 +676,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/web.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -619,6 +696,26 @@
           <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
             <element signature="e#14#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/testfunc/targetfunc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#18#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/triangle_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
