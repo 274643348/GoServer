@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab98b55-c523-491f-8521-93cbab66a5a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/errhanding/err.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goroutine/goroutine.go" beforeDir="false" afterPath="$PROJECT_DIR$/goroutine/goroutine.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,35 +19,36 @@
     <session id="-568377763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="74" />
+          <entry key="go" value="75" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="74" />
+          <entry key="Go" value="75" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="8537" />
+          <entry key="go" value="9943" />
           <entry key="txt" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="8537" />
+          <entry key="Go" value="9943" />
           <entry key="PLAIN_TEXT" value="64" />
         </counts>
       </usages-collector>
@@ -63,20 +64,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/web.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1085">
-              <caret line="96" column="19" lean-forward="true" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
-              <folding>
-                <element signature="e#14#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="248">
+              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/errhanding/err.txt">
+        <entry file="file://$PROJECT_DIR$/goroutine/goroutine.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            <state relative-caret-position="220">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="e#14#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,11 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handler.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#21#62#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="405">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -98,8 +96,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go Application" />
         <option value="Go File" />
+        <option value="Go Application" />
       </list>
     </option>
   </component>
@@ -145,6 +143,7 @@
         <option value="$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handler.go" />
         <option value="$PROJECT_DIR$/errhanding/filelistingserver/web.go" />
         <option value="$PROJECT_DIR$/errhanding/err.txt" />
+        <option value="$PROJECT_DIR$/goroutine/goroutine.go" />
       </list>
     </option>
   </component>
@@ -154,7 +153,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="34" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
@@ -199,6 +198,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,28 +206,17 @@
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errhanding" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="functionClosure" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542622560220" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542784272479" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -254,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build web.go">
+  <component name="RunManager" selected="Go Build.go build goroutine.go">
     <configuration name="go build defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -271,11 +260,11 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goroutine.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/functionClosure/main.go" />
+      <filePath value="$PROJECT_DIR$/goroutine/goroutine.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -296,19 +285,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build defer.go" />
       <item itemvalue="Go Build.go build error.go" />
       <item itemvalue="Go Build.go build recover.go" />
       <item itemvalue="Go Build.go build web.go" />
+      <item itemvalue="Go Build.go build goroutine.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build goroutine.go" />
         <item itemvalue="Go Build.go build web.go" />
         <item itemvalue="Go Build.go build recover.go" />
         <item itemvalue="Go Build.go build error.go" />
         <item itemvalue="Go Build.go build defer.go" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -328,12 +317,13 @@
       <workItem from="1542264986465" duration="1649000" />
       <workItem from="1542266932831" duration="7939000" />
       <workItem from="1542335374840" duration="486000" />
-      <workItem from="1542606819252" duration="11029000" />
+      <workItem from="1542606819252" duration="13047000" />
+      <workItem from="1542780094052" duration="3466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36293000" />
+    <option name="totallyTimeSpent" value="41777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -345,10 +335,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="23" width="1440" height="824" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="824" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26680973" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27038628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -357,14 +347,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59731543" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8748212" weight="0.32103825" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8712446" weight="0.32103825" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713877" weight="0.397541" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32786885" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785408" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49499285" visible="true" weight="0.3306011" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50500715" side_tool="true" visible="true" weight="0.3306011" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.490701" visible="true" weight="0.3306011" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.509299" side_tool="true" visible="true" weight="0.3306011" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -557,9 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#14#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -567,9 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <element signature="e#14#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -608,30 +592,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handler.go">
+    <entry file="file://$PROJECT_DIR$/errhanding/err.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#21#62#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/web.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1085">
-          <caret line="96" column="19" lean-forward="true" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="248">
+          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/errhanding/err.txt">
+    <entry file="file://$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handler.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="405">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goroutine/goroutine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#14#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
