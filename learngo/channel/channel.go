@@ -1,5 +1,12 @@
 package main
+/*
+	channel，gorotine之间消息的通道
 
+	1：chanel的使用
+	2：chan<-和<-chan类型
+	3：buffered channel缓冲
+	4：channel被close后，goroutine中的判断
+ */
 import (
 	"fmt"
 	"time"

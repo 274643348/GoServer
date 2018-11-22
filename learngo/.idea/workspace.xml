@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab98b55-c523-491f-8521-93cbab66a5a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/channel/channel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/channel.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,13 +51,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="12047" />
+          <entry key="go" value="12189" />
           <entry key="txt" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="12047" />
+          <entry key="Go" value="12189" />
           <entry key="PLAIN_TEXT" value="64" />
         </counts>
       </usages-collector>
@@ -74,10 +73,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/channel/channel.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="180" column="41" lean-forward="true" selection-start-line="180" selection-start-column="41" selection-end-line="180" selection-end-column="41" />
+            <state relative-caret-position="-2633">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
-                <element signature="e#14#39#0" expanded="true" />
+                <element signature="e#22#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,7 +211,7 @@
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542858977069" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542859275532" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -323,7 +322,7 @@
       <workItem from="1542780094052" duration="7221000" />
       <workItem from="1542799859419" duration="389000" />
       <workItem from="1542853192412" duration="130000" />
-      <workItem from="1542853447499" duration="3661000" />
+      <workItem from="1542853447499" duration="3961000" />
     </task>
     <servers />
   </component>
@@ -360,7 +359,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49712000" />
+    <option name="totallyTimeSpent" value="50012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -384,14 +383,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59731543" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8683834" visible="true" weight="0.21174863" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8683834" weight="0.21174863" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713877" weight="0.397541" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785408" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48783976" weight="0.28005466" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.13161659" side_tool="true" visible="true" weight="0.21174863" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.48712447" visible="true" weight="0.024590164" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51287556" side_tool="true" visible="true" weight="0.024590164" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -677,10 +676,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/channel/channel.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="180" column="41" lean-forward="true" selection-start-line="180" selection-start-column="41" selection-end-line="180" selection-end-column="41" />
+        <state relative-caret-position="-2633">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
-            <element signature="e#14#39#0" expanded="true" />
+            <element signature="e#22#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
