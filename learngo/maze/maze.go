@@ -108,6 +108,38 @@ func walk(maze [][]int ,start,end point)[][]int{
 	return steps
 
 }
+
+func findPath(steps [][]int,start,end point)[]point{
+	P:=[]point{end}
+
+	Q:=[]point{end}
+	for len(Q) >0{
+		cur := Q[0]
+		Q = Q[1:]
+		//遍历周围找出比自己steps小1的
+		for _,dir := range dirs  {
+			next := cur.add(dir)
+
+			curStep,_ := cur.at(steps)
+			//不存在，或者不等于当前steps - 1
+			//当steps - 1 = 0时，必须和start相等
+			nextSteps,ok :=next.at(steps)
+			if !ok || nextSteps !=curStep - 1{
+				continue
+			}
+
+			if(curStep -1 == 0 && next != start) {
+				continue
+			}
+
+			P = append([]point{next},P...)
+			Q = append(Q,next)
+
+		}
+
+	}
+	return  P
+}
 func main() {
 	maze := readMze("maze/maze.in")
 	//for _,row :=range maze {
@@ -117,13 +149,20 @@ func main() {
 	//	fmt.Println()
 	//}
 
+	start :=point{0,0}
+	end :=point{len(maze) - 1,len(maze[0]) - 1}
 	//走迷宫
-	steps := walk(maze,point{0,0},point{len(maze) - 1,len(maze[0]) - 1})
+	steps := walk(maze,start,end)
 
 	for _,row :=range  steps{
 		for _,val := range row  {
 			fmt.Printf("%3d",val)
 		}
 		fmt.Println()
+	}
+
+	P :=findPath(steps,start,end)
+	for _,row :=range  P{
+			fmt.Printf("%v",row)
 	}
 }
