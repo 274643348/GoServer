@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab98b55-c523-491f-8521-93cbab66a5a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/maze/maze.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maze/maze.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maze/maze.go" beforeDir="false" afterPath="$PROJECT_DIR$/maze/maze.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maze/maze.in" beforeDir="false" afterPath="$PROJECT_DIR$/maze/maze.in" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,15 +53,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="14289" />
-          <entry key="in" value="44" />
+          <entry key="go" value="15470" />
+          <entry key="in" value="45" />
           <entry key="txt" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="14289" />
-          <entry key="PLAIN_TEXT" value="108" />
+          <entry key="Go" value="15470" />
+          <entry key="PLAIN_TEXT" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -89,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maze/maze.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            <state relative-caret-position="347">
+              <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
               <folding>
                 <element signature="e#14#37#0" expanded="true" />
               </folding>
@@ -101,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/maze/maze.in">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="60">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -245,7 +244,7 @@
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542955842445" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542958182977" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -353,7 +352,7 @@
       <workItem from="1542799859419" duration="389000" />
       <workItem from="1542853192412" duration="130000" />
       <workItem from="1542853447499" duration="8376000" />
-      <workItem from="1542945948131" duration="3999000" />
+      <workItem from="1542945948131" duration="6326000" />
     </task>
     <servers />
   </component>
@@ -390,7 +389,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58426000" />
+    <option name="totallyTimeSpent" value="60753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -405,7 +404,7 @@
     <frame x="0" y="23" width="1440" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.15665236" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.15665236" />
       <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" visible="true" weight="0.15665236" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -414,14 +413,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59731543" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85979974" visible="true" weight="0.3387978" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4899857" weight="0.329235" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8569385" visible="true" weight="0.3387978" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48855507" weight="0.329235" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49713877" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48497853" weight="0.23360656" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.14020029" side_tool="true" visible="true" weight="0.3387978" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48426324" weight="0.23360656" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.14306152" side_tool="true" visible="true" weight="0.3387978" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -488,6 +487,24 @@
           <line>38</line>
           <properties />
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/maze/maze.go</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/maze/maze.go</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/maze/maze.go</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -765,8 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/maze/maze.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="347">
+          <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
           <folding>
             <element signature="e#14#37#0" expanded="true" />
           </folding>
@@ -775,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/maze/maze.in">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
