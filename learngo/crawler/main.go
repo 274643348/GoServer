@@ -11,4 +11,10 @@ func main() {
 		ParseFunc:parse.ParseCityList,
 	})
 
+	//测试
+	//engine.Run(engine.Request{
+	//	Url:"http://album.zhenai.com/u/1903652003",
+	//	ParseFunc:parse.PraseProfile,
+	//})
+
 }

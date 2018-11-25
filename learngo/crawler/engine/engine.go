@@ -15,7 +15,7 @@ func Run(seeds ...Request){
 
 		//获取目标中Url的body
 		log.Printf("Fetching %s",r.Url)
-		body,err :=fetcher.Fetcher(r.Url)
+		body,err :=fetcher.Fetcher2(r.Url)
 		if err != nil {
 			log.Printf("Fetch: error " +
 				"fetching  url %s : %v",r.Url,err)
