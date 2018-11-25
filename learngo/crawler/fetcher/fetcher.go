@@ -15,7 +15,7 @@ import (
 
 //获取url中的数据（utf-8）
 func Fetcher(url string)([]byte,error){
-	resp, err := http.Get("http://www.zhenai.com/zhenghun")
+	resp, err := http.Get(url)
 	if err != nil {
 		panic(err)
 	}
