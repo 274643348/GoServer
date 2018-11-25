@@ -18,6 +18,8 @@ func ParseCityList(contents []byte) engine.ParseRusult{
 			ParseFunc:ParseCity,
 		})
 		//fmt.Printf("City: %s,URL: %s\n",m[2],m[1])
+		//
+		break
 	}
 
 	//fmt.Println(len(matchs))
