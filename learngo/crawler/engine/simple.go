@@ -2,7 +2,10 @@ package engine
 
 import "log"
 import "../fetcher"
-func Run(seeds ...Request){
+
+type SimpleEngine struct{}
+
+func (e SimpleEngine)Run(seeds ...Request){
 	var requests []Request
 	for _,r:=range seeds{
 		requests =append(requests, r)
@@ -13,17 +16,10 @@ func Run(seeds ...Request){
 		r:=requests[0]
 		requests = requests[1:]
 
-		//获取目标中Url的body
-		log.Printf("Fetching %s",r.Url)
-		body,err :=fetcher.Fetcher2(r.Url)
+		parseResult,err :=e.worker(r)
 		if err != nil {
-			log.Printf("Fetch: error " +
-				"fetching  url %s : %v",r.Url,err)
 			continue
 		}
-
-		//
-		parseResult := r.ParseFunc(body)
 		requests = append(requests,parseResult.Requests...)
 
 		for _,item := range parseResult.Items{
@@ -33,4 +29,19 @@ func Run(seeds ...Request){
 
 
 	}
+}
+
+
+func (e SimpleEngine)worker(r Request)(ParseRusult,error){
+	//获取目标中Url的body
+	log.Printf("Fetching %s",r.Url)
+	body,err :=fetcher.Fetcher2(r.Url)
+	if err != nil {
+		log.Printf("Fetch: error " +
+			"fetching  url %s : %v",r.Url,err)
+		return  ParseRusult{},err
+	}
+
+	//
+	return r.ParseFunc(body),nil
 }
