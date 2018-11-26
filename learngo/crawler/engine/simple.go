@@ -16,7 +16,7 @@ func (e SimpleEngine)Run(seeds ...Request){
 		r:=requests[0]
 		requests = requests[1:]
 
-		parseResult,err :=e.worker(r)
+		parseResult,err :=worker(r)
 		if err != nil {
 			continue
 		}
@@ -32,7 +32,7 @@ func (e SimpleEngine)Run(seeds ...Request){
 }
 
 
-func (e SimpleEngine)worker(r Request)(ParseRusult,error){
+func worker(r Request)(ParseRusult,error){
 	//获取目标中Url的body
 	log.Printf("Fetching %s",r.Url)
 	body,err :=fetcher.Fetcher2(r.Url)
