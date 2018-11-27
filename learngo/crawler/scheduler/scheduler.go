@@ -9,7 +9,10 @@ type SimpleScheduler struct {
 }
 
 func ( e *SimpleScheduler) Submit(r engine.Request) {
-
+	//go func() {
+	//
+	//	e.workerChan<-r
+	//}()
 	e.workerChan<-r
 }
 
