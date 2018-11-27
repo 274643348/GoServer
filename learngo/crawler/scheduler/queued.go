@@ -15,8 +15,8 @@ func (e *QueuedScheduler) WorkerReady(w chan engine.Request){
 	e.workerChan <-w
 }
 
-func (e *QueuedScheduler) ConfigureMustWorkChan(r chan engine.Request) {
-	panic("implement me")
+func (e *QueuedScheduler) WorkerChan( )chan engine.Request {
+	return make(chan engine.Request)
 }
 
 func (e *QueuedScheduler) Run(){

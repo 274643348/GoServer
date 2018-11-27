@@ -3,9 +3,19 @@ package scheduler
 import (
 	"../engine"
 )
-
 type SimpleScheduler struct {
 	workerChan chan engine.Request
+}
+
+func (e *SimpleScheduler) WorkerChan() chan engine.Request {
+	return e.workerChan
+}
+
+func (e *SimpleScheduler) WorkerReady(r chan engine.Request) {
+}
+
+func (e *SimpleScheduler) Run() {
+	e.workerChan = make(chan  engine.Request)
 }
 
 func ( e *SimpleScheduler) Submit(r engine.Request) {

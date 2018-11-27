@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab98b55-c523-491f-8521-93cbab66a5a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crawler/scheduler/queued.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawler/engine/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/engine/concurrent.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/scheduler/queued.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/scheduler/queued.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/scheduler/scheduler.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/scheduler/scheduler.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,27 +43,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="170" />
+          <entry key="go" value="172" />
           <entry key="in" value="1" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="170" />
+          <entry key="Go" value="172" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="22488" />
+          <entry key="go" value="22773" />
           <entry key="in" value="45" />
           <entry key="txt" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="22488" />
+          <entry key="Go" value="22773" />
           <entry key="PLAIN_TEXT" value="109" />
         </counts>
       </usages-collector>
@@ -77,7 +77,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crawler/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -89,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/engine/concurrent.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+            <state relative-caret-position="234">
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -101,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/scheduler/scheduler.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="34" />
+            <state relative-caret-position="25">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="37" />
               <folding>
                 <element signature="e#19#42#0" expanded="true" />
               </folding>
@@ -111,10 +111,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/engine/simple.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+              <folding>
+                <element signature="e#16#48#0" expanded="true" />
+                <element signature="n#!!block;n#Run#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/scheduler/queued.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -194,10 +207,10 @@
         <option value="$PROJECT_DIR$/crawler/engine/engine.go" />
         <option value="$PROJECT_DIR$/crawler/engine/simple.go" />
         <option value="$PROJECT_DIR$/crawler/zhenai/parse/citylist.go" />
-        <option value="$PROJECT_DIR$/crawler/scheduler/scheduler.go" />
-        <option value="$PROJECT_DIR$/crawler/main.go" />
         <option value="$PROJECT_DIR$/crawler/scheduler/queued.go" />
         <option value="$PROJECT_DIR$/crawler/engine/concurrent.go" />
+        <option value="$PROJECT_DIR$/crawler/scheduler/scheduler.go" />
+        <option value="$PROJECT_DIR$/crawler/main.go" />
       </list>
     </option>
   </component>
@@ -263,7 +276,13 @@
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="functionClosure" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngo" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
@@ -279,7 +298,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543301674405" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543302930572" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -392,7 +411,7 @@
       <workItem from="1543049863424" duration="16963000" />
       <workItem from="1543196723377" duration="102000" />
       <workItem from="1543225576672" duration="5280000" />
-      <workItem from="1543281923784" duration="6409000" />
+      <workItem from="1543281923784" duration="7326000" />
     </task>
     <servers />
   </component>
@@ -429,7 +448,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95197000" />
+    <option name="totallyTimeSpent" value="96114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,14 +472,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49785408" weight="0.33333334" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.82474965" visible="true" weight="0.3169399" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.82403433" visible="true" weight="0.3169399" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5693848" weight="0.30191258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49427754" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49499285" weight="0.21857923" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17525035" side_tool="true" visible="true" weight="0.3169399" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49427754" weight="0.21857923" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17596567" side_tool="true" visible="true" weight="0.3169399" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -838,16 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/engine/simple.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="e#16#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/zhenai/parse/citylist.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -889,33 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/scheduler/queued.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/scheduler/scheduler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#19#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="e#14#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functionClosure/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -933,10 +915,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/scheduler/queued.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/engine/simple.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <element signature="e#16#48#0" expanded="true" />
+            <element signature="n#!!block;n#Run#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/scheduler/scheduler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="e#19#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/engine/concurrent.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+        <state relative-caret-position="234">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
+            <element signature="e#14#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
