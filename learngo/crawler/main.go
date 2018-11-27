@@ -2,8 +2,9 @@ package main
 
 import (
 	"./engine"
-	"./zhenai/parse"
 	"./scheduler"
+	"./zhenai/parse"
+	"./persist"
 )
 
 func main() {
@@ -21,6 +22,7 @@ func main() {
 	e :=engine.ConcurrentEngine{
 		Scheduler:&scheduler.QueuedScheduler{},
 		WorkerCount:10,
+		ItemChan:persist.ItemSaver(),
 	}
 	//e.Run(engine.Request{
 	//	Url:"http://www.zhenai.com/zhenghun",
