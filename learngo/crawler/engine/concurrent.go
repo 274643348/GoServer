@@ -10,6 +10,8 @@ type ConcurrentEngine struct {
 type Scheduler interface{
 	Submit(Request)
 	ConfigureMustWorkChan(chan Request)
+	WorkerReady(chan Request)
+	Run()
 }
 
 
@@ -17,15 +19,19 @@ func (e *ConcurrentEngine)Run(seeds ...Request){
 
 
 
-	//所有的worker共用一个输入输出
-	in := make(chan Request)
+	////所有的worker共用一个输入输出
+	//in := make(chan Request)
+	//out := make(chan ParseRusult)
+	//
+	////配置输出chan到shceduler
+	//e.Scheduler.ConfigureMustWorkChan(in)
+
 	out := make(chan ParseRusult)
+	e.Scheduler.Run()
 
-	//配置输出chan到shceduler
-	e.Scheduler.ConfigureMustWorkChan(in)
-
+	fmt.Println(&e)
 	for i:=0; i<e.WorkerCount;i++  {
-		createWorker(in,out)
+		createWorker(out,&e.Scheduler)
 	}
 
 	//将request注入scheduler
@@ -34,10 +40,14 @@ func (e *ConcurrentEngine)Run(seeds ...Request){
 	}
 
 	//接受out的数据
+	count :=0
 	for  {
 		result := <-out
+
+
 		for _,item :=range result.Items  {
-			fmt.Printf("Get item :%v\n",item)
+			fmt.Printf("%d--Get item :%v\n",count,item)
+			count++
 		}
 
 		for _,request := range result.Requests  {
@@ -49,9 +59,15 @@ func (e *ConcurrentEngine)Run(seeds ...Request){
 
 }
 
-func createWorker(in chan Request,out chan ParseRusult){
+func createWorker(out chan ParseRusult,s *Scheduler){
+
+	fmt.Println(&s)
+	//每一个worker都有自己的chan，用于针对自己的chan接受
+	in := make(chan Request)
 	go func() {
 		for{
+
+			(*s).WorkerReady(in)
 			request := <-in
 			result,err := worker(request)
 			if err != nil {
