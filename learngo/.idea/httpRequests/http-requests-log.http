@@ -1,0 +1,412 @@
+GET http://localhost:9200/dating_profile/zhenai/_search
+
+<> 2018-11-28T022721.200.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/?q=golang2
+
+<> 2018-11-28T022709.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/AWdY_oNeSYuHS1wk8Pb0?q=golang2
+
+<> 2018-11-28T022702.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search?q=golang2
+
+<> 2018-11-28T022558.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q=golang2
+
+<> 2018-11-28T123952.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search
+
+<> 2018-11-28T123930.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?p=name:golang2&q=gonlang2
+
+<> 2018-11-28T123914.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?p=name:golang2
+
+<> 2018-11-28T123629.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search
+
+<> 2018-11-28T123615.200.json
+
+###
+
+GET http://localhost:9200/imooc/_search
+
+<> 2018-11-28T122919.200.json
+
+###
+
+POST http://localhost:9200/imooc/_search
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T122911.400.json
+
+###
+
+GET http://localhost:9200/imooc/_search
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T122213.400.json
+
+###
+
+GET http://localhost:9200/imooc/_search
+
+<> 2018-11-28T122152.200.json
+
+###
+
+GET http://localhost:9200/imooc/_search
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120534.400.json
+
+###
+
+GET http://localhost:9200/imooc/_search
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120514.400.json
+
+###
+
+GET http://localhost:9200/imooc/_search
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120427.400.json
+
+###
+
+GET http://localhost:9200/imooc/_search
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120310.400.json
+
+###
+
+GET http://localhost:9200/imooc/search
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120307-1.400.json
+
+###
+
+GET http://localhost:9200/imooc/search
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120307.400.json
+
+###
+
+GET http://localhost:9200/imooc/_search
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120259.400.json
+
+###
+
+GET http://localhost:9200/imooc
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120230.200.json
+
+###
+
+GET http://localhost:9200/imooc/course
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120124-1.400.json
+
+###
+
+GET http://localhost:9200/imooc/course
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120124.400.json
+
+###
+
+GET http://localhost:9200/imooc/course
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120123.400.json
+
+###
+
+GET http://localhost:9200/imooc/course
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120122.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120117.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120115.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120054.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120052.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120045.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/1?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120041.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120024.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search%20?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120018.404.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T120011.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115947.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/2?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115942.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/1?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115935.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115838.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search%20/?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115831.404.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search/?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115827.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115816.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115740.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/__search?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115736.404.json
+
+###
+
+GET http://localhost:9200/imooc/course/__search%20?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115731.404.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search%20%20?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115719.404.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115715.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search%20?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115709.404.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search%20?pretty=
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115705.404.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search%20?q=golang1&pretty=&p=golang2
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115653.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q=golang1&pretty=&p=golang2
+Content-Type: application/json
+
+{   "name":"golang1",   "instructor":"id1" }
+
+<> 2018-11-28T115630.400.json
+
+###
+
