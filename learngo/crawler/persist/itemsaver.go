@@ -23,7 +23,7 @@ func ItemSaver()chan interface{}{
 
 }
 
-func save(item interface{}){
+func save(item interface{})(id string ,err error){
 	client,err := elastic.NewClient(
 		//默认寻找服务器
 		//elastic.SetURL()
@@ -32,7 +32,7 @@ func save(item interface{}){
 		elastic.SetSniff(false))
 
 	if err != nil{
-		panic(err)
+		return "",err
 	}
 
 	resp,err := client.Index().
@@ -40,8 +40,8 @@ func save(item interface{}){
 		Type("zhenai").BodyJson(item).
 		Do(context.Background())
 	if err != nil {
-		panic(err)
+		return "",err
 	}
 
-	fmt.Printf("%+v",resp)
+	return resp.Id,nil
 }

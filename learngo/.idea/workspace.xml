@@ -84,12 +84,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="1" />
+          <entry key="Go" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="2" />
+          <entry key="Go" value="460" />
         </counts>
       </usages-collector>
     </session>
@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/persist/itemsaver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="420">
+              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -108,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crawler/persist/itemsaver_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="295">
+              <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -296,7 +296,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543386490294" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543389451901" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1576,44 +1576,44 @@
       <workItem from="1543281923784" duration="10516000" />
       <workItem from="1543373744695" duration="1677000" />
       <workItem from="1543376387535" duration="4994000" />
-      <workItem from="1543388269819" duration="104000" />
+      <workItem from="1543388269819" duration="1180000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 25m 55s.xml">
-      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 26m 36s.xml">
-      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 26m 46s.xml">
-      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 26m 52s.xml">
-      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestTriangleB_in_triangle_test_go - 2018.11.21 at 17h 26m 54s.xml">
-      <configuration name="TestTriangleB in triangle_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestTriangle_in_triangle_test_go - 2018.11.21 at 17h 27m 00s.xml">
-      <configuration name="TestTriangle in triangle_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestTriangle_in_triangle_test_go - 2018.11.21 at 17h 27m 07s.xml">
-      <configuration name="TestTriangle in triangle_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSaver_in_itemsaver_test_go - 2018.11.28 at 14h 23m 51s.xml">
-      <configuration name="TestSaver in itemsaver_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSaver_in_itemsaver_test_go - 2018.11.28 at 14h 24m 26s.xml">
-      <configuration name="TestSaver in itemsaver_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestSaver_in_itemsaver_test_go - 2018.11.28 at 14h 25m 34s.xml">
       <configuration name="TestSaver in itemsaver_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 14h 59m 40s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 15h 07m 50s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 15h 09m 48s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 15h 12m 30s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 15h 12m 38s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 15h 16m 01s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 15h 16m 46s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 15h 17m 09s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSaver_in_learngo_GoServer_learngo_crawler_persist - 2018.11.28 at 15h 17m 21s.xml">
+      <configuration name="TestSaver in learngo/GoServer/learngo/crawler/persist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106079000" />
+    <option name="totallyTimeSpent" value="107155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1628,8 +1628,8 @@
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6939891" visible="true" weight="0.28040057" />
-      <window_info id="Structure" order="1" sideWeight="0.30601093" side_tool="true" visible="true" weight="0.28040057" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6960168" visible="true" weight="0.28040057" />
+      <window_info id="Structure" order="1" sideWeight="0.30398324" side_tool="true" visible="true" weight="0.28040057" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -1637,14 +1637,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49785408" weight="0.33333334" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8161659" visible="true" weight="0.5" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.81545067" visible="true" weight="0.34836066" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.56795424" weight="0.30191258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49356222" weight="0.32650274" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48855507" weight="0.21857923" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.18383405" side_tool="true" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48783976" weight="0.21857923" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.18454936" side_tool="true" visible="true" weight="0.34836066" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="REST Client" order="12" sideWeight="0.69957083" visible="true" weight="0.4385246" />
@@ -1753,13 +1753,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tree/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tree/node/node.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -2113,15 +2106,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler/persist/itemsaver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="420">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/encoding/json/decode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler/persist/itemsaver_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="295">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
         </state>
       </provider>
     </entry>
