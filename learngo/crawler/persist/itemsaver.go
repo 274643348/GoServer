@@ -3,12 +3,14 @@ package persist
 import (
 	"context"
 	"fmt"
+	"github.com/pkg/errors"
 	"gopkg.in/olivere/elastic.v5"
+	"learngo/GoServer/learngo/crawler/engine"
 	"log"
 )
 
-func ItemSaver()chan interface{}{
-	out := make(chan interface{})
+func ItemSaver()chan engine.Item{
+	out := make(chan engine.Item)
 
 	go func() {
 		itemCount := 0
@@ -16,7 +18,7 @@ func ItemSaver()chan interface{}{
 			item :=<-out
 			fmt.Printf("Got item #%d %v\n",itemCount,item)
 			itemCount ++
-			_,err :=save(item)
+			err :=save(item)
 			if err != nil {
 				log.Printf("Item saver: error save item %v:%v",item,err);
 			}
@@ -27,7 +29,7 @@ func ItemSaver()chan interface{}{
 
 }
 
-func save(item interface{})(id string ,err error){
+func save(item engine.Item) error{
 	client,err := elastic.NewClient(
 		//默认寻找服务器
 		//elastic.SetURL()
@@ -36,16 +38,26 @@ func save(item interface{})(id string ,err error){
 		elastic.SetSniff(false))
 
 	if err != nil{
-		return "",err
+		return err
 	}
 
-	resp,err := client.Index().
+	if item.Type == "" {
+		return  errors.New("itemsaver error: item.Type must have")
+	}
+
+	indexService := client.Index().
 		Index("dating_profile").
-		Type("zhenai").BodyJson(item).
-		Do(context.Background())
-	if err != nil {
-		return "",err
+		Type(item.Type).BodyJson(item)
+
+	if item.Id != ""{
+		indexService.Id(item.Id)
 	}
 
-	return resp.Id,nil
+	_ ,err = indexService.Do(context.Background())
+
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
