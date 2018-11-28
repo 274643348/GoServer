@@ -5,11 +5,18 @@ import (
 	"learngo/GoServer/learngo/crawler/engine"
 	"learngo/GoServer/learngo/crawler/moder"
 	"regexp"
+	"strconv"
 )
 
 const name =`<span class="nickName" [^>]+>([^<]+)</span>`
-const age =`<div class="m-btn purple" [^>]+>([^<]+岁)</div>`
+const age =`<div class="m-btn purple" [^>]+>([^<]+)岁</div>`
 const Gender =`<a href="http://www.zhenai.com/zhenghun[^>]+>[^<]+(男士|女士)征婚</a>`
+//<div class="id" data-v-35c72236="">ID：1768325386</div>
+const id = `<div class="id" [^>]+>ID：([^<]+)</div>`
+
+const house = `<div class="m-btn pink" [^>]+>([^<]+房)</div>`
+const car = `<div class="m-btn pink" [^>]+>([^<]+车)</div>`
+const stature = `<div class="m-btn pink" [^>]+>(体型[^<]+)</div>`
 //const other =`<div class="purple-btns" data-v-ff544c08><div class="m-btn purple" data-v-ff544c08>([^<]+)</div>`+
 //	`[^>]+>([^<]+)</div>`+
 //	`[^>]+>([^<]+)</div>`+
@@ -43,26 +50,22 @@ func PraseProfile(contents []byte) engine.ParseRusult{
 	}()
 
 	profile := moder.Profile{}
-	re :=regexp.MustCompile(name)
-	matchs := re.FindSubmatch(contents)
-	//fmt.Printf("wwwww%s\n",matchs)
-	if matchs != nil {
-		profile.Name = string(matchs[1])
+
+	profile.Name = extract(contents,name)
+	age ,err := strconv.Atoi(extract(contents,age))
+	if err != nil {
+		age = 0
 	}
 
-	re =regexp.MustCompile(age)
-	matchs = re.FindSubmatch(contents)
-	//fmt.Printf("wwwww%s\n",matchs)
-	if matchs != nil {
-		profile.Age = string(matchs[1])
-	}
+	profile.Age = age
+	profile.Gender =extract(contents,Gender)
+	profile.House =extract(contents,house)
+	profile.Car =extract(contents,car)
+	profile.Stature = extract(contents,stature)
+	var Id =extract(contents,id)
 
-	re =regexp.MustCompile(Gender)
-	matchs = re.FindSubmatch(contents)
-	//fmt.Printf("wwwww%s\n",matchs)
-	if matchs != nil {
-		profile.Gender = string(matchs[1])
-	}
+
+
 
 
 	//re =regexp.MustCompile(other)
@@ -83,10 +86,27 @@ func PraseProfile(contents []byte) engine.ParseRusult{
 
 	result := engine.ParseRusult{
 
-		Items:[]interface{}{profile},
+		Items:[]engine.Item{
+			{
+				Url:"http://album.zhenai.com/u/"+Id,
+				Id:Id,
+				Type:"zhenai",
+				Payload:profile,
+			},
+		},
 	}
 
 
 	//fmt.Println(len(matchs))
 	return result
+}
+
+func extract(b []byte,text string) string {
+	re :=regexp.MustCompile(text)
+	matchs := re.FindSubmatch(b)
+	//fmt.Printf("wwwww%s\n",matchs)
+	if matchs != nil {
+		return string(matchs[1])
+	}
+	return `"无"`
 }

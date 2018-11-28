@@ -24,14 +24,14 @@ func main() {
 		WorkerCount:100,
 		ItemChan:persist.ItemSaver(),
 	}
-	e.Run(engine.Request{
-		Url:"http://www.zhenai.com/zhenghun",
-		ParseFunc:parse.ParseCityList,
-	})
-
 	//e.Run(engine.Request{
-	//	Url:"http://www.zhenai.com/zhenghun/shanghai",
-	//	ParseFunc:parse.ParseCity,
+	//	Url:"http://www.zhenai.com/zhenghun",
+	//	ParseFunc:parse.ParseCityList,
 	//})
+
+	e.Run(engine.Request{
+		Url:"http://www.zhenai.com/zhenghun/shanghai",
+		ParseFunc:parse.ParseCity,
+	})
 
 }

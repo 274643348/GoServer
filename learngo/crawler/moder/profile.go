@@ -7,13 +7,13 @@ type Profile struct {
 	Id string
 	Name string
 	Gender string
-	Age string
+	Age int
 	Height string
 	Weight string
 	Income string
 	Marrige string
 	Education string
-	Occupation string
+	Stature string
 	Hukou string
 	Xingzuo string
 	House string
