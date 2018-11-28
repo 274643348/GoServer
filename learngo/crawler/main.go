@@ -19,10 +19,14 @@ func main() {
 	//	ParseFunc:parse.PraseProfile,
 	//})
 
+	itemsaver ,err:=persist.ItemSaver()
+	if err != nil {
+		panic(err)
+	}
 	e :=engine.ConcurrentEngine{
 		Scheduler:&scheduler.QueuedScheduler{},
 		WorkerCount:100,
-		ItemChan:persist.ItemSaver(),
+		ItemChan:itemsaver,
 	}
 	//e.Run(engine.Request{
 	//	Url:"http://www.zhenai.com/zhenghun",

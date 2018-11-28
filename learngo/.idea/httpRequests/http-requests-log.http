@@ -1,3 +1,9 @@
+GET http://localhost:9200/dating_profile/zhenai/1768325386
+
+<> 2018-11-28T064423.200.json
+
+###
+
 GET http://localhost:9200/dating_profile/zhenai/_search
 
 <> 2018-11-28T022721.200.json
@@ -398,15 +404,6 @@ Content-Type: application/json
 {   "name":"golang1",   "instructor":"id1" }
 
 <> 2018-11-28T115653.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search?q=golang1&pretty=&p=golang2
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115630.400.json
 
 ###
 

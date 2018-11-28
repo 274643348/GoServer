@@ -9,27 +9,9 @@ import (
 	"log"
 )
 
-func ItemSaver()chan engine.Item{
+func ItemSaver()(chan engine.Item,error){
 	out := make(chan engine.Item)
 
-	go func() {
-		itemCount := 0
-		for true {
-			item :=<-out
-			fmt.Printf("Got item #%d %v\n",itemCount,item)
-			itemCount ++
-			err :=save(item)
-			if err != nil {
-				log.Printf("Item saver: error save item %v:%v",item,err);
-			}
-		}
-	}()
-
-	return  out
-
-}
-
-func save(item engine.Item) error{
 	client,err := elastic.NewClient(
 		//默认寻找服务器
 		//elastic.SetURL()
@@ -38,8 +20,27 @@ func save(item engine.Item) error{
 		elastic.SetSniff(false))
 
 	if err != nil{
-		return err
+		return nil,err
 	}
+
+	go func() {
+		itemCount := 0
+		for true {
+			item :=<-out
+			fmt.Printf("Got item #%d %v\n",itemCount,item)
+			itemCount ++
+			err :=save(client,item)
+			if err != nil {
+				log.Printf("Item saver: error save item %v:%v",item,err);
+			}
+		}
+	}()
+
+	return  out,nil
+
+}
+
+func save(client *elastic.Client,item engine.Item) error{
 
 	if item.Type == "" {
 		return  errors.New("itemsaver error: item.Type must have")
@@ -53,7 +54,7 @@ func save(item engine.Item) error{
 		indexService.Id(item.Id)
 	}
 
-	_ ,err = indexService.Do(context.Background())
+	_ ,err := indexService.Do(context.Background())
 
 	if err != nil {
 		return err
