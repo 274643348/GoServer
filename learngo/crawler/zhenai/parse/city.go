@@ -1,6 +1,7 @@
 package parse
+
 import (
-	"../../engine"
+	"learngo/GoServer/learngo/crawler/engine"
 	"regexp"
 )
 
@@ -22,14 +23,14 @@ func ParseCity(contents []byte) engine.ParseRusult{
 		})
 		//fmt.Printf("City: %s,URL: %s\n",m[2],m[1])
 	}
-
-	matchs = cityRe.FindAllSubmatch(contents,-1)
-	for _,m:=range matchs  {
-		result.Requests = append(result.Requests,engine.Request{
-			Url:string(m[1]),
-			ParseFunc:ParseCity,
-		})
-	}
+	//
+	//matchs = cityRe.FindAllSubmatch(contents,-1)
+	//for _,m:=range matchs  {
+	//	result.Requests = append(result.Requests,engine.Request{
+	//		Url:string(m[1]),
+	//		ParseFunc:ParseCity,
+	//	})
+	//}
 	//fmt.Println(len(matchs))
 	return result
 }

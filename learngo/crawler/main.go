@@ -1,10 +1,10 @@
 package main
 
 import (
-	"./engine"
-	"./scheduler"
-	"./zhenai/parse"
-	"./persist"
+	"learngo/GoServer/learngo/crawler/engine"
+	"learngo/GoServer/learngo/crawler/persist"
+	"learngo/GoServer/learngo/crawler/scheduler"
+	"learngo/GoServer/learngo/crawler/zhenai/parse"
 )
 
 func main() {
@@ -21,17 +21,17 @@ func main() {
 
 	e :=engine.ConcurrentEngine{
 		Scheduler:&scheduler.QueuedScheduler{},
-		WorkerCount:10,
+		WorkerCount:100,
 		ItemChan:persist.ItemSaver(),
 	}
-	//e.Run(engine.Request{
-	//	Url:"http://www.zhenai.com/zhenghun",
-	//	ParseFunc:parse.ParseCityList,
-	//})
-
 	e.Run(engine.Request{
-		Url:"http://www.zhenai.com/zhenghun/shanghai",
-		ParseFunc:parse.ParseCity,
+		Url:"http://www.zhenai.com/zhenghun",
+		ParseFunc:parse.ParseCityList,
 	})
+
+	//e.Run(engine.Request{
+	//	Url:"http://www.zhenai.com/zhenghun/shanghai",
+	//	ParseFunc:parse.ParseCity,
+	//})
 
 }

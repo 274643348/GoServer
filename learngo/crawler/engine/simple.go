@@ -1,7 +1,9 @@
 package engine
 
-import "log"
-import "../fetcher"
+import (
+	"learngo/GoServer/learngo/crawler/fetcher"
+	"log"
+)
 
 type SimpleEngine struct{}
 
@@ -34,7 +36,7 @@ func (e SimpleEngine)Run(seeds ...Request){
 
 func worker(r Request)(ParseRusult,error){
 	//获取目标中Url的body
-	log.Printf("Fetching %s",r.Url)
+	//log.Printf("Fetching %s",r.Url)
 	body,err :=fetcher.Fetcher2(r.Url)
 	if err != nil {
 		log.Printf("Fetch: error " +

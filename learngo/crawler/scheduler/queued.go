@@ -1,6 +1,6 @@
 package scheduler
 
-import "../engine"
+import "learngo/GoServer/learngo/crawler/engine"
 
 type QueuedScheduler struct {
 	requestChan chan engine.Request

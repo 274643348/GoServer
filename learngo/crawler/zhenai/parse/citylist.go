@@ -1,7 +1,7 @@
 package parse
 
 import (
-	"../../engine"
+	"learngo/GoServer/learngo/crawler/engine"
 	"regexp"
 )
 

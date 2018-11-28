@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"gopkg.in/olivere/elastic.v5"
+	"log"
 )
 
 func ItemSaver()chan interface{}{
@@ -15,7 +16,10 @@ func ItemSaver()chan interface{}{
 			item :=<-out
 			fmt.Printf("Got item #%d %v\n",itemCount,item)
 			itemCount ++
-			save(item)
+			_,err :=save(item)
+			if err != nil {
+				log.Printf("Item saver: error save item %v:%v",item,err);
+			}
 		}
 	}()
 

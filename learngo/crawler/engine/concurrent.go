@@ -1,7 +1,5 @@
 package engine
 
-import "fmt"
-
 type ConcurrentEngine struct {
 	Scheduler Scheduler
 	WorkerCount int
@@ -30,7 +28,6 @@ func (e *ConcurrentEngine)Run(seeds ...Request){
 	out := make(chan ParseRusult)
 	e.Scheduler.Run()
 
-	fmt.Println(&e)
 	for i:=0; i<e.WorkerCount;i++  {
 		createWorker(e.Scheduler.WorkerChan(),out,&e.Scheduler)
 	}
@@ -62,7 +59,6 @@ func (e *ConcurrentEngine)Run(seeds ...Request){
 
 func createWorker(in chan Request,out chan ParseRusult,s *Scheduler){
 
-	fmt.Println(&s)
 	//每一个worker都有自己的chan，用于针对自己的chan接受
 	go func() {
 		for{
