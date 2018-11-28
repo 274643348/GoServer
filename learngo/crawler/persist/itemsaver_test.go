@@ -1,8 +1,9 @@
 package persist
 
-import "testing"
-import "../moder"
-import "../persist"
+import (
+	"learngo/GoServer/learngo/crawler/moder"
+	"testing"
+)
 
 func TestSaver(t *testing.T) {
 	profile := moder.Profile{
@@ -20,5 +21,5 @@ func TestSaver(t *testing.T) {
 		House :"11",
 		Car :"11",
 	}
-	persist.Save(profile)
+	save(profile)
 }

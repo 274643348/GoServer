@@ -15,7 +15,7 @@ func ItemSaver()chan interface{}{
 			item :=<-out
 			fmt.Printf("Got item #%d %v\n",itemCount,item)
 			itemCount ++
-			Save(item)
+			save(item)
 		}
 	}()
 
@@ -23,7 +23,7 @@ func ItemSaver()chan interface{}{
 
 }
 
-func Save(item interface{}){
+func save(item interface{}){
 	client,err := elastic.NewClient(
 		//默认寻找服务器
 		//elastic.SetURL()
