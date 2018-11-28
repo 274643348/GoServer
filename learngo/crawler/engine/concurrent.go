@@ -49,6 +49,9 @@ func (e *ConcurrentEngine)Run(seeds ...Request){
 		}
 
 		for _,request := range result.Requests  {
+			if isDuplicate(request.Url) {
+				continue
+			}
 			e.Scheduler.Submit(request)
 		}
 	}
@@ -73,4 +76,14 @@ func createWorker(in chan Request,out chan ParseRusult,s *Scheduler){
 			out <- result
 		}
 	}()
+}
+
+var visitedUrls  = make(map[string]bool)
+
+func isDuplicate(url string) bool{
+	if visitedUrls[url] {
+		return true
+	}
+	visitedUrls[url] = true
+	return false
 }
