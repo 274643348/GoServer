@@ -13,9 +13,9 @@ func main() {
 	//Age:([20 TO 30])
 
 	//防止找不到css文件
-	http.Handle("/", http.FileServer(http.Dir("/Users/liujingyan/go/src/learngo/GoServer/learngo/crawler/frontend/view")))
+	http.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir("./crawler/frontend/view"))))
 
-	http.Handle("/search", controller.CreateSearchResultHandler("/Users/liujingyan/go/src/learngo/GoServer/learngo/crawler/frontend/view/template.html"))
+	http.Handle("/search", controller.CreateSearchResultHandler("./crawler/frontend/view/template.html"))
 
 	err := http.ListenAndServe(":9999", nil)
 
