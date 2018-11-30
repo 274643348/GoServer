@@ -3,21 +3,21 @@ package moder
 import "encoding/json"
 
 type Profile struct {
-	Url string
-	Id string
-	Name string
-	Gender string
-	Age int
-	Height string
-	Weight string
-	Income string
-	Marrige string
+	Url       string
+	Id        string
+	Name      string
+	Gender    string
+	Age       int
+	Height    string
+	Weight    string
+	Income    string
+	Marriage  string
 	Education string
-	Stature string
-	Hukou string
-	Xingzuo string
-	House string
-	Car string
+	Stature   string
+	Hukou     string
+	Xingzuo   string
+	House     string
+	Car       string
 }
 
 func FromJsonObj(o interface{})(Profile,error){

@@ -79,7 +79,7 @@ func PraseProfile(contents []byte) engine.ParseRusult{
 	//	profile.Height = string(matchs[4])
 	//	profile.Weight =string(matchs[5])
 	//	profile.Income =string(matchs[7])
-	//	profile.Marrige =string(matchs[14])
+	//	profile.Marriage =string(matchs[14])
 	//	profile.Occupation = string(matchs[15])
 	//	//profile.
 	//}

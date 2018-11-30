@@ -3,8 +3,7 @@ package view
 import (
 	"html/template"
 	"io"
-
-	"../model"
+	"learngo/GoServer/learngo/crawler/frontend/model"
 )
 
 type SearchResultView struct {
