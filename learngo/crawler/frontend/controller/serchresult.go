@@ -7,6 +7,7 @@ import (
 	"learngo/GoServer/learngo/crawler/frontend/view"
 	"net/http"
 	"reflect"
+	"regexp"
 	"strconv"
 	"strings"
 
@@ -71,7 +72,7 @@ func (h SearchResultHandler) getSearchResult(q string, from int) (model.SearchRe
 	var result model.SearchResult
 	result.Query = q
 	resp, err := h.client.Search("dating_profile").
-		Query(elastic.NewQueryStringQuery(q)).
+		Query(elastic.NewQueryStringQuery(rewriteQueryString(q))).
 		From(from).
 		Do(context.Background())
 
@@ -91,5 +92,13 @@ func (h SearchResultHandler) getSearchResult(q string, from int) (model.SearchRe
 	result.NextFrom = result.Start + len(result.Items)
 
 	return result, nil
+
+}
+
+//搜索栏输入Age:(<30),自动在前补齐Payload.
+func rewriteQueryString(q string)string{
+	re := regexp.MustCompile(`([a-zA-Z]*):`)
+	payloadAge := re.ReplaceAllString(q,"Payload.$1:")
+	return payloadAge
 
 }
