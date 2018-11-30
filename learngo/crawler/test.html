@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #searchblank {
+            margin-top: 70px;
+            text-align: center;
+        }
+        #customers table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+
+        }
+
+        #customers  td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #customers  th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers table tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<div id="searchblank">
+    <from>
+        <input type="text" name="q" value="">
+        <button type="submit">搜索</button>
+    </from>
+</div>
+<h4 style="text-align:center">共为你找到相关结果为{{.Hits}}个。显示从{{.Start}}起共{{len .Items}}个</h4>
+<div id="customers">
+    <table>
+        <thead>
+        <tr>
+            <th>昵称</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>身高</th>
+            <th>体重</th>
+            <th>收入</th>
+            <th>学历</th>
+            <th>职位</th>
+            <th>所在地</th>
+            <th>星座</th>
+            <th>购房情况</th>
+            <th>购车情况</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td><a href="{{.Url}}" target="_blank">{{.Payload.Name}}</a></td>
+            <td>{{.Gender}}</td>
+            <td>{{.Age}}</td>
+            <td>{{.Height}}CM</td>
+            <td>{{.Weight}}KG</td>
+            <td>{{.Income}}</td>
+            <td>{{.Education}}</td>
+            <td>{{.Occupation}}</td>
+        </tr>
+        <tr>
+            <td><a href="{{.Url}}" target="_blank">{{.Payload.Name}}</a></td>
+            <td>{{.Gender}}</td>
+            <td>{{.Age}}</td>
+            <td>{{.Height}}CM</td>
+            <td>{{.Weight}}KG</td>
+            <td>{{.Income}}</td>
+            <td>{{.Education}}</td>
+            <td>{{.Occupation}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <div align="middle">
+        <a href="search?q={{.Query}}&from={{.PrevFrom}}">上一页</a>
+        <a href="search?q={{.Query}}&from={{.NextFrom}}">下一页</a>
+
+    </div>
+
+</div>
+</body>
+</html>
