@@ -9,7 +9,8 @@ import (
 
 func main() {
 
-	//http.Handle("/", http.FileServer(http.Dir("frontend/view")))
+	//防止找不到css文件
+	http.Handle("/", http.FileServer(http.Dir("crawler/frontend/view")))
 
 	http.Handle("/search", controller.CreateSearchResultHandler("crawler/frontend/view/template.html"))
 
