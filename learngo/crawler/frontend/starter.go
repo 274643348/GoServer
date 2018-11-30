@@ -1,4 +1,5 @@
-package frontend
+package main
+
 
 import (
 	"net/http"
@@ -8,9 +9,9 @@ import (
 
 func main() {
 
-	http.Handle("/", http.FileServer(http.Dir("frontend/view")))
+	//http.Handle("/", http.FileServer(http.Dir("frontend/view")))
 
-	http.Handle("/search", controller.CreateSearchResultHandler("frontend/view/template.html"))
+	http.Handle("/search", controller.SearchResultHandler{})
 
 	err := http.ListenAndServe(":9999", nil)
 
