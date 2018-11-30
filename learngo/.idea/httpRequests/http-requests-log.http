@@ -1,3 +1,45 @@
+GET http://localhost:9200/dating_profile/zhenai/_search
+
+<> 2018-11-30T095529.200.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search
+
+<> 2018-11-30T095426.200.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/
+
+<> 2018-11-30T095132.400.json
+
+###
+
+GET http://localhost:9300/dating_profile/zhenai/
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/
+
+<> 2018-11-30T095045.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search
+
+<> 2018-11-30T094801.200.json
+
+###
+
 GET http://localhost:9200/dating_profile/zhenai/1768325386
 
 <> 2018-11-28T064423.200.json
@@ -332,78 +374,6 @@ Content-Type: application/json
 {   "name":"golang1",   "instructor":"id1" }
 
 <> 2018-11-28T115816.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115740.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/__search?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115736.404.json
-
-###
-
-GET http://localhost:9200/imooc/course/__search%20?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115731.404.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search%20%20?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115719.404.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115715.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search%20?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115709.404.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search%20?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115705.404.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search%20?q=golang1&pretty=&p=golang2
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T115653.400.json
 
 ###
 

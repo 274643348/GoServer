@@ -70,10 +70,12 @@
             </tbody>
         </table>
         <div align="middle">
-            {{if ge .PrevFrom 0}}
+            {{if gt .PrevFrom 0}}
             <a href="search?q={{.Query}}&from={{.PrevFrom}}">上一页</a>
-             {{end}}
+            {{end}}
+            {{if lt .NextFrom (.Hits)}}
             <a href="search?q={{.Query}}&from={{.NextFrom}}">下一页</a>
+            {{end}}
 
         </div>
 

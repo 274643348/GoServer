@@ -10,6 +10,7 @@ type SearchResultView struct {
 	template *template.Template
 }
 
+//获取filename的template模版
 func CreateSearchResultView(filename string) SearchResultView {
 
 	return SearchResultView{
@@ -19,6 +20,7 @@ func CreateSearchResultView(filename string) SearchResultView {
 
 }
 
+//template执行data数据到w中
 func (s SearchResultView) Render(w io.Writer, data model.SearchResult) error {
 
 	return s.template.Execute(w, data)
