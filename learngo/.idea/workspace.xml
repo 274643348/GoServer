@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab98b55-c523-491f-8521-93cbab66a5a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/frontend/controller/serchresult.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/frontend/controller/serchresult.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/main" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/main.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -78,18 +80,18 @@
     <session id="574105805">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="Go" value="70" />
-          <entry key="HTML" value="10" />
+          <entry key="Go" value="72" />
+          <entry key="HTML" value="11" />
           <entry key="Image" value="1" />
           <entry key="RNG Compact" value="2" />
         </counts>
@@ -97,7 +99,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="Go" value="2818" />
+          <entry key="Go" value="2868" />
           <entry key="HTML" value="239" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
@@ -107,25 +109,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crawler/frontend/view/searchresult_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
-              <folding>
-                <element signature="e#14#84#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crawler/frontend/controller/serchresult.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-              <folding>
-                <element signature="e#20#172#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="202">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -133,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="94" column="7" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -151,14 +138,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crawler/frontend/starter.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-              <folding>
-                <element signature="e#18#57#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/frontend/view/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="53" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -166,17 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/frontend/view/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crawler/frontend/view/searchresult.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="745">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -221,8 +205,8 @@
       <find>form-group</find>
       <find>hover</find>
       <find>umask</find>
-      <find>resp</find>
       <find>PrevFrom</find>
+      <find>resp</find>
     </findStrings>
     <replaceStrings>
       <replace>Retriever</replace>
@@ -239,9 +223,6 @@
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response17.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -284,9 +265,7 @@
         <option value="$PROJECT_DIR$/crawler/engine/type.go" />
         <option value="$PROJECT_DIR$/crawler/engine/concurrent.go" />
         <option value="$PROJECT_DIR$/crawler/zhenai/parse/profile.go" />
-        <option value="$PROJECT_DIR$/crawler/main.go" />
         <option value="$PROJECT_DIR$/crawler/persist/itemsaver.go" />
-        <option value="$PROJECT_DIR$/crawler/test.html" />
         <option value="$PROJECT_DIR$/frontend/view/template.html" />
         <option value="$PROJECT_DIR$/frontend/view/css/style.css" />
         <option value="$PROJECT_DIR$/crawler/view/searchresult_test.go" />
@@ -295,8 +274,10 @@
         <option value="$PROJECT_DIR$/crawler/frontend/view/searchresult_test.go" />
         <option value="$PROJECT_DIR$/crawler/frontend/view/searchresult.go" />
         <option value="$PROJECT_DIR$/crawler/frontend/view/template.html" />
-        <option value="$PROJECT_DIR$/crawler/frontend/starter.go" />
         <option value="$PROJECT_DIR$/crawler/frontend/controller/serchresult.go" />
+        <option value="$PROJECT_DIR$/crawler/test.html" />
+        <option value="$PROJECT_DIR$/crawler/frontend/starter.go" />
+        <option value="$PROJECT_DIR$/crawler/main.go" />
       </list>
     </option>
   </component>
@@ -306,9 +287,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="50" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1679" />
+    <option name="y" value="-140" />
     <option name="width" value="1440" />
     <option name="height" value="824" />
   </component>
@@ -340,7 +321,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -352,6 +332,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -383,13 +364,6 @@
             </path>
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -403,7 +377,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543545829223" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543566700929" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -423,6 +397,77 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9200" />
+          <option name="urlPath" value="dating_profile/zhenai/_search" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="q" />
+                <option name="value" value="Payload.Age:([10 TO 30])" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9200" />
+          <option name="urlPath" value="dating_profile/zhenai/_search" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="q" />
+                <option name="value" value="Payload.Age:([10 TO 20])" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9200" />
+          <option name="urlPath" value="dating_profile/zhenai/_search" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="q" />
+                <option name="value" value="Payload.Age:(&lt;30)" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9200" />
+          <option name="urlPath" value="dating_profile/zhenai/_search" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="q" />
+                <option name="value" value="golang2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="q" />
+                <option name="value" value="女" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="q" />
+                <option name="value" value="Payload.Age:(&lt;30)" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:9200" />
@@ -1447,122 +1492,6 @@
           <option name="textToSend" value="{   &quot;name&quot;:&quot;golang1&quot;,   &quot;instructor&quot;:&quot;id1&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:9200" />
-          <option name="urlPath" value="imooc/course/2" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="q" />
-                <option name="value" value="golang1" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="pretty" />
-                <option name="value" value="" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;name&quot;:&quot;golang1&quot;,   &quot;instructor&quot;:&quot;id1&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:9200" />
-          <option name="urlPath" value="imooc/course/1" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="q" />
-                <option name="value" value="golang1" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="pretty" />
-                <option name="value" value="" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;name&quot;:&quot;golang1&quot;,   &quot;instructor&quot;:&quot;id1&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:9200" />
-          <option name="urlPath" value="imooc/course/_search" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="q" />
-                <option name="value" value="golang1" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="pretty" />
-                <option name="value" value="" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;name&quot;:&quot;golang1&quot;,   &quot;instructor&quot;:&quot;id1&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:9200" />
-          <option name="urlPath" value="imooc/course/_search" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="q" />
-                <option name="value" value="golang" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="pretty" />
-                <option name="value" value="" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;name&quot;:&quot;golang1&quot;,   &quot;instructor&quot;:&quot;id1&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1578,7 +1507,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build starter.go">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -1638,8 +1567,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build starter.go" />
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build starter.go" />
         <item itemvalue="Go Test.TestSearchResultView_Render in learngo/GoServer/learngo/crawler/frontend/view" />
         <item itemvalue="Go Test.TestTemplate in learngo/GoServer/learngo/crawler/frontend/view" />
         <item itemvalue="Go Test.TestSaver in learngo/GoServer/learngo/crawler/persist" />
@@ -1680,7 +1609,8 @@
       <workItem from="1543388269819" duration="12543000" />
       <workItem from="1543455606545" duration="530000" />
       <workItem from="1543488026644" duration="3286000" />
-      <workItem from="1543538367251" duration="7242000" />
+      <workItem from="1543538367251" duration="10866000" />
+      <workItem from="1543562805680" duration="2774000" />
     </task>
     <servers />
   </component>
@@ -1717,7 +1647,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129576000" />
+    <option name="totallyTimeSpent" value="135974000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1729,11 +1659,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="50" width="1440" height="824" extended-state="0" />
-    <editor active="true" />
+    <frame x="1440" y="-517" width="2560" height="1417" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79761904" visible="true" weight="0.27038628" />
-      <window_info id="Structure" order="1" sideWeight="0.20238096" side_tool="true" visible="true" weight="0.27038628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7943662" visible="true" weight="0.15210484" />
+      <window_info id="Structure" order="1" sideWeight="0.2056338" side_tool="true" visible="true" weight="0.15210484" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -1741,17 +1670,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49499285" weight="0.33333334" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7939914" weight="0.2090164" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.78911835" weight="0.37962264" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70243204" weight="0.41530055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49284694" weight="0.32650274" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5629471" visible="true" weight="0.19672132" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.43705294" side_tool="true" visible="true" weight="0.19672132" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5603654" visible="true" weight="0.19622642" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.43963462" side_tool="true" visible="true" weight="0.19622642" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="REST Client" order="12" sideWeight="0.6945637" weight="0.44262296" />
+      <window_info anchor="bottom" id="REST Client" order="12" sideWeight="0.69241774" weight="0.53688526" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -2045,20 +1974,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/view/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/view/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="28" column="64" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/view/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/frontend/view/template.html" />
     <entry file="file://$PROJECT_DIR$/crawler/scheduler/queued.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -2108,14 +2025,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="39" column="15" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="15" />
-          <folding>
-            <element signature="e#16#77#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/frontend/view/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler/persist/itemsaver.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -2128,20 +2039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/moder/profile.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -2159,10 +2056,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/frontend/view/searchresult.go">
+    <entry file="file://$PROJECT_DIR$/crawler/frontend/view/searchresult_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/frontend/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/moder/profile.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -2173,20 +2091,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/frontend/view/searchresult_test.go">
+    <entry file="file://$PROJECT_DIR$/crawler/frontend/controller/serchresult.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
-          <folding>
-            <element signature="e#14#84#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="202">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/test.html">
+    <entry file="file://$PROJECT_DIR$/crawler/frontend/view/searchresult.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="94" column="7" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+        <state relative-caret-position="195">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/frontend/view/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="1986" selection-start-line="1986" selection-end-line="1990" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -2202,28 +2131,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler/frontend/starter.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#18#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/frontend/view/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/frontend/controller/serchresult.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#20#172#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>

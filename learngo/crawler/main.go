@@ -28,14 +28,14 @@ func main() {
 		WorkerCount:100,
 		ItemChan:itemsaver,
 	}
-	//e.Run(engine.Request{
-	//	Url:"http://www.zhenai.com/zhenghun",
-	//	ParseFunc:parse.ParseCityList,
-	//})
-
 	e.Run(engine.Request{
-		Url:"http://www.zhenai.com/zhenghun/zhengzhou",
-		ParseFunc:parse.ParseCity,
+		Url:"http://www.zhenai.com/zhenghun",
+		ParseFunc:parse.ParseCityList,
 	})
+
+	//e.Run(engine.Request{
+	//	Url:"http://www.zhenai.com/zhenghun/zhengzhou",
+	//	ParseFunc:parse.ParseCity,
+	//})
 
 }
