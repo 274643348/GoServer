@@ -34,7 +34,7 @@ func main() {
 	//})
 
 	e.Run(engine.Request{
-		Url:"http://www.zhenai.com/zhenghun/shanghai",
+		Url:"http://www.zhenai.com/zhenghun/zhengzhou",
 		ParseFunc:parse.ParseCity,
 	})
 
