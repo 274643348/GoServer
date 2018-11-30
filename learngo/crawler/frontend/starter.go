@@ -9,6 +9,9 @@ import (
 
 func main() {
 
+	//Age:(<30)
+	//Age:([20 TO 30])
+
 	//防止找不到css文件
 	http.Handle("/", http.FileServer(http.Dir("crawler/frontend/view")))
 
