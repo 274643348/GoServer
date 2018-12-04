@@ -1,3 +1,33 @@
+GET http://localhost:9200/test1/zhenai/_search?q=Payload.Age:([10 TO 30])
+
+<> 2018-12-04T053100.200.json
+
+###
+
+GET http://localhost:9200/test1/zhenai/_search?q=Payload.Age:([10 TO 30])
+
+<> 2018-12-04T052502.404.json
+
+###
+
+GET http://localhost:9200/test1/zhenai/_search?q=Payload.Age:([10 TO 30])
+
+<> 2018-12-04T052011.404.json
+
+###
+
+GET http://localhost:9200/test1?q=Payload.Age:([10 TO 30])
+
+<> 2018-12-04T051951.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search?q=Payload.Age:([10 TO 30])
+
+<> 2018-12-04T051858.200.json
+
+###
+
 GET http://localhost:9200/dating_profile/zhenai/_search?q=Payload.Age:([10 TO 30])
 
 <> 2018-11-30T084906.200.json
@@ -302,51 +332,6 @@ Content-Type: application/json
 {   "name":"golang1",   "instructor":"id1" }
 
 <> 2018-11-28T120115.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T120054.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T120052.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T120045.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/1?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T120041.200.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T120024.400.json
 
 ###
 
