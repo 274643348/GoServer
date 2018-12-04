@@ -8,6 +8,15 @@ import (
 	"net/rpc/jsonrpc"
 )
 
+/*
+	rpc.go中实现一个Div方法，然后在main中开启网络服务器
+	在终端中输入 telnet localhost 1234
+	然后在输入测试代码：{"method":"abc.def"}
+
+	//测试：
+	//{"method":"abc.def"}--错误演示
+	//{"method":"DemoService.Div","params":[{"A":3,"B":4}],"id":1314}--正确演示
+ */
 func main() {
 
 	rpc.Register(rpcDemo.DemoService{})
@@ -27,7 +36,5 @@ func main() {
 	}
 
 
-	//测试：
-	//{"method":"abc.def"}--错误演示
-	//{"method":"DemoService.Div","params":[{"A":3,"B":4}],"id":1314}--正确演示
+
 }
