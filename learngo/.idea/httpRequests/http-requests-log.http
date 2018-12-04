@@ -1,5 +1,11 @@
 GET http://localhost:9200/dating_profile/zhenai/_search?q=Payload.Age:([10 TO 30])
 
+<> 2018-11-30T084906.200.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search?q=Payload.Age:([10 TO 30])
+
 <> 2018-11-30T114950.200.json
 
 ###
@@ -341,15 +347,6 @@ Content-Type: application/json
 {   "name":"golang1",   "instructor":"id1" }
 
 <> 2018-11-28T120024.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/_search%20?pretty=
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T120018.404.json
 
 ###
 
