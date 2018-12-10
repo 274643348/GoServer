@@ -1,0 +1,44 @@
+{
+  "took": 140,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "test1",
+        "_type": "zhenai",
+        "_id": "1768325386",
+        "_score": 1.0,
+        "_source": {
+          "Url": "http://album.zhenai.com/u/1768325386",
+          "Type": "zhenai",
+          "Id": "1768325386",
+          "Payload": {
+            "Age": 11,
+            "Car": "11",
+            "Education": "11",
+            "Gender": "女",
+            "Height": "11",
+            "House": "11",
+            "Hukou": "11",
+            "Id": "",
+            "Income": "11",
+            "Marriage": "11",
+            "Name": "小红",
+            "Stature": "11",
+            "Url": "",
+            "Weight": "11",
+            "Xingzuo": "11"
+          }
+        }
+      }
+    ]
+  }
+}

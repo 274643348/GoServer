@@ -1,5 +1,11 @@
 GET http://localhost:9200/test1/zhenai/_search?q=Payload.Age:([10 TO 30])
 
+<> 2018-12-10T035142.200.json
+
+###
+
+GET http://localhost:9200/test1/zhenai/_search?q=Payload.Age:([10 TO 30])
+
 <> 2018-12-04T053100.200.json
 
 ###
@@ -323,15 +329,6 @@ Content-Type: application/json
 {   "name":"golang1",   "instructor":"id1" }
 
 <> 2018-11-28T120117.400.json
-
-###
-
-GET http://localhost:9200/imooc/course/
-Content-Type: application/json
-
-{   "name":"golang1",   "instructor":"id1" }
-
-<> 2018-11-28T120115.400.json
 
 ###
 

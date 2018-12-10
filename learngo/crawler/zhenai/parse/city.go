@@ -1,6 +1,7 @@
 package parse
 
 import (
+	"fmt"
 	"learngo/GoServer/learngo/crawler/engine"
 	"regexp"
 )
@@ -12,23 +13,23 @@ var(
 	cityRe =regexp.MustCompile(`<a href="(http://www.zhenai.com/zhenghun/[^"]+)"`)
 	)
 
-func ParseCity(contents []byte) engine.ParseRusult{
+func ParseCity(contents []byte,_ string) engine.ParseRusult{
 	matchs := profileRe.FindAllSubmatch(contents,-1)
 	result := engine.ParseRusult{}
 	for _,m :=range matchs{
 		//result.Items = append(result.Items,"User : "+string(m[2]))
 		result.Requests = append(result.Requests,engine.Request{
 			Url:string(m[1]),
-			ParseFunc:PraseProfile,
+			Parse:NewProfileParser("name"),
 		})
-		//fmt.Printf("City: %s,URL: %s\n",m[2],m[1])
+		fmt.Printf("City: %s,URL: %s\n",m[2],m[1])
 	}
 	//
 	//matchs = cityRe.FindAllSubmatch(contents,-1)
 	//for _,m:=range matchs  {
 	//	result.Requests = append(result.Requests,engine.Request{
 	//		Url:string(m[1]),
-	//		ParseFunc:ParseCity,
+	//		Parse:engine.NewFuncParser(ParseCity,"ParseCity"),
 	//	})
 	//}
 	//fmt.Println(len(matchs))

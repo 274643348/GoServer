@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-const name =`<span class="nickName" [^>]+>([^<]+)</span>`
+const Name =`<span class="nickName" [^>]+>([^<]+)</span>`
 const age =`<div class="m-btn purple" [^>]+>([^<]+)岁</div>`
 const Gender =`<a href="http://www.zhenai.com/zhenghun[^>]+>[^<]+(男士|女士)征婚</a>`
 //<div class="id" data-v-35c72236="">ID：1768325386</div>
@@ -40,7 +40,7 @@ const stature = `<div class="m-btn pink" [^>]+>(体型[^<]+)</div>`
 
 
 
-func PraseProfile(contents []byte) engine.ParseRusult{
+func parseProfile(contents []byte,url string ,name string) engine.ParseRusult{
 	defer func(){
 		err := recover()
 		if err != nil {
@@ -51,7 +51,7 @@ func PraseProfile(contents []byte) engine.ParseRusult{
 
 	profile := moder.Profile{}
 
-	profile.Name = extract(contents,name)
+	profile.Name = extract(contents,Name)
 	age ,err := strconv.Atoi(extract(contents,age))
 	if err != nil {
 		age = 0
@@ -109,4 +109,28 @@ func extract(b []byte,text string) string {
 		return string(matchs[1])
 	}
 	return `"无"`
+}
+
+
+
+//func NewProfileParser(name string)engine.ParserFunc{
+//	return func(contents []byte, url string) engine.ParseRusult {
+//		return ParseProfile(contents,url,name)
+//	}
+//}
+
+type ProfileParser struct {
+	userName string
+}
+
+func (p *ProfileParser) Parser(contents []byte, url string) engine.ParseRusult {
+	return parseProfile(contents,url,p.userName)
+}
+
+func (p *ProfileParser) Serialize() (name string, args interface{}) {
+	return"ProfileParser" ,p.userName
+}
+
+func NewProfileParser(name string) *ProfileParser{
+	 return &ProfileParser{userName:name}
 }
