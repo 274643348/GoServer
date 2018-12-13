@@ -70,7 +70,7 @@ func DeserializeRequest(r Request) (engine.Request,error){
 	},nil
 }
 
-func DeserializeParseResult(r ParseResult) (engine.ParseRusult,error){
+func DeserializeParseResult(r ParseResult) engine.ParseRusult{
 	result :=engine.ParseRusult{
 		Items:r.Items,
 	}
@@ -83,7 +83,7 @@ func DeserializeParseResult(r ParseResult) (engine.ParseRusult,error){
 		}
 		result.Requests = append(result.Requests,enginReq)
 	}
-	return result,nil
+	return result
 }
 
 

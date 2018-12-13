@@ -4,7 +4,9 @@ import (
 	"learngo/GoServer/learngo/crawler/engine"
 	"learngo/GoServer/learngo/crawler/scheduler"
 	"learngo/GoServer/learngo/crawler/zhenai/parse"
-	"learngo/GoServer/learngo/crawler_distributed/persist/Client"
+	itemSever "learngo/GoServer/learngo/crawler_distributed/persist/Client"
+	worker "learngo/GoServer/learngo/crawler_distributed/worker/Client"
+
 )
 
 func main() {
@@ -19,7 +21,12 @@ func main() {
 	//	ParseFunc:parse.PraseProfile,
 	//})
 
-	itemsaver ,err:=Client.ItemSaver(":1234")
+	itemsaver ,err:=itemSever.ItemSaver(":1234")
+	if err != nil {
+		panic(err)
+	}
+
+	processor,err := worker.CreaterWorkerProcess()
 	if err != nil {
 		panic(err)
 	}
@@ -27,6 +34,7 @@ func main() {
 		Scheduler:&scheduler.QueuedScheduler{},
 		WorkerCount:100,
 		ItemChan:itemsaver,
+		Request:processor,
 	}
 	//e.Run(engine.Request{
 	//	Url:"http://www.zhenai.com/zhenghun",

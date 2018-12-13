@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"learngo/GoServer/learngo/crawler/engine"
 	"learngo/GoServer/learngo/crawler/moder"
+	"learngo/GoServer/learngo/crawler_distributed/config"
 	"regexp"
 	"strconv"
 )
@@ -128,7 +129,7 @@ func (p *ProfileParser) Parser(contents []byte, url string) engine.ParseRusult {
 }
 
 func (p *ProfileParser) Serialize() (name string, args interface{}) {
-	return"ProfileParser" ,p.userName
+	return config.ParseProfile ,p.userName
 }
 
 func NewProfileParser(name string) *ProfileParser{

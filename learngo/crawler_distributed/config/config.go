@@ -5,7 +5,7 @@ const(
 	ElasticIndex = "dating_profile"
 	ItemSaveRpc = "ItemSaverService.Save"
 
-	WorkerPort0 = 1234
+	WorkerPort0 = 9000
 
 	ParseCity = "ParseCity"
 	ParseCityList = "ParseCityList"
