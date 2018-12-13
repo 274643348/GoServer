@@ -10,7 +10,7 @@ import (
 )
 
 /*
-	用于测试itemSaverService的服务端serverRpc（及./main.go）的正确性
+	用于测试itemSaverService的服务端serverRpc（及./itemsaveRpcServer.go）的正确性
  */
 
 func TestItemServer(t *testing.T){

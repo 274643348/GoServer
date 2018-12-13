@@ -1,0 +1,3 @@
+ItemSaveRPC整合完成（实现存储分布式）：
+测试方式：1：itemsaveRpcServer服务器开启---------persist/server/itemsaveRpcServer----运行
+         2：main项目开启---------main----运行
