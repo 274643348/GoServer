@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"gopkg.in/olivere/elastic.v5"
 	"learngo/GoServer/learngo/crawler/engine"
-	"learngo/GoServer/learngo/crawler/persist"
+	"learngo/GoServer/learngo/crawler_distributed/persist/Client"
 )
 
 /*
@@ -17,7 +17,7 @@ type ItemSaverService struct {
 }
 
 func(s *ItemSaverService)Save(item engine.Item,result *string)error{
-	err := persist.Save(s.Client,s.Index,item)
+	err := Client.Save(s.Client,s.Index,item)
 	fmt.Printf("Item %v saved.\n",item)
 
 	if err == nil {
