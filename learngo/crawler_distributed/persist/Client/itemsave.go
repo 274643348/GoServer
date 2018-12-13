@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"gopkg.in/olivere/elastic.v5"
 	"learngo/GoServer/learngo/crawler/engine"
+	"learngo/GoServer/learngo/crawler_distributed/config"
 	"learngo/GoServer/learngo/crawler_distributed/rpcsupport"
 	"log"
 )
@@ -30,7 +31,7 @@ func ItemSaver(host string)(chan engine.Item,error){
 			fmt.Printf("Got item #%d %v\n",itemCount,item)
 			itemCount ++
 			result:=""
-			err := client.Call("ItemSaverService.Save",item,&result)
+			err := client.Call(config.ItemSaveRpc,item,&result)
 			if err != nil {
 				log.Printf("Item saver: error Save item %v:%v",item,err)
 			}
