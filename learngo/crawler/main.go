@@ -27,6 +27,7 @@ func main() {
 		Scheduler:&scheduler.QueuedScheduler{},
 		WorkerCount:100,
 		ItemChan:itemsaver,
+		Request:engine.Worker,
 	}
 	//e.Run(engine.Request{
 	//	Url:"http://www.zhenai.com/zhenghun",

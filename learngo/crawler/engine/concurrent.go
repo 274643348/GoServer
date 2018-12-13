@@ -4,7 +4,10 @@ type ConcurrentEngine struct {
 	Scheduler Scheduler
 	WorkerCount int
 	ItemChan chan Item
+	Request Processor
 }
+
+type Processor func(Request)(ParseRusult,error)
 
 type Scheduler interface{
 	Submit(Request)
@@ -29,7 +32,7 @@ func (e *ConcurrentEngine)Run(seeds ...Request){
 	e.Scheduler.Run()
 
 	for i:=0; i<e.WorkerCount;i++  {
-		createWorker(e.Scheduler.WorkerChan(),out,&e.Scheduler)
+		e.createWorker(e.Scheduler.WorkerChan(),out,&e.Scheduler)
 	}
 
 	//将request注入scheduler
@@ -60,7 +63,7 @@ func (e *ConcurrentEngine)Run(seeds ...Request){
 
 }
 
-func createWorker(in chan Request,out chan ParseRusult,s *Scheduler){
+func (e *ConcurrentEngine)createWorker(in chan Request,out chan ParseRusult,s *Scheduler){
 
 	//每一个worker都有自己的chan，用于针对自己的chan接受
 	go func() {
@@ -68,7 +71,7 @@ func createWorker(in chan Request,out chan ParseRusult,s *Scheduler){
 
 			(*s).WorkerReady(in)
 			request := <-in
-			result,err := Worker(request)
+			result,err := e.Request(request)
 			if err != nil {
 				continue
 			}
