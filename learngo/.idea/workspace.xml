@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab98b55-c523-491f-8521-93cbab66a5a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_distributed/README" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_distributed/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_distributed/worker/server/workerServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/worker/server/workerServer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webGo/01/string/stringUsing.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webGo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webGo/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -80,25 +78,26 @@
     <session id="574105805">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.7" value="7" />
-          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
           <entry key="Enforced Plain Text" value="1" />
-          <entry key="Go" value="273" />
+          <entry key="Go" value="274" />
           <entry key="HTML" value="14" />
           <entry key="Image" value="1" />
+          <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="RNG Compact" value="2" />
         </counts>
@@ -115,11 +114,11 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler_distributed/persist/server/itemsaveRpcServer.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state>
               <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
@@ -137,19 +136,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler_distributed/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+            <state relative-caret-position="390">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler_distributed/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crawler_distributed/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/maze/maze.go">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -165,7 +169,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
       <find>string</find>
       <find>save</find>
       <find>fetch</find>
@@ -195,6 +198,7 @@
       <find>createWorker</find>
       <find>ProfileParser</find>
       <find>createClientPool</find>
+      <find>slice</find>
     </findStrings>
     <replaceStrings>
       <replace>Retriever</replace>
@@ -206,6 +210,7 @@
       <dir>$PROJECT_DIR$/.idea/retriever</dir>
       <dir>$PROJECT_DIR$/crawler/zhenai</dir>
       <dir>$PROJECT_DIR$/crawler/engine</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -286,9 +291,8 @@
       <path value="$PROJECT_DIR$/node_modules/traverse/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="14" />
-    <option name="y" value="48" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
   </component>
@@ -321,17 +325,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="learngo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="learngo" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,74 +335,22 @@
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="zhenai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="zhenai" type="462c0819:PsiDirectoryNode" />
-              <item name="parse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
-              <item name="persist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
-              <item name="persist" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
-              <item name="worker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
-              <item name="worker" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
-              <item name="worker" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="retriever" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="learngo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="learngo" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
@@ -422,7 +363,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544761093817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544776049689" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1651,6 +1592,7 @@
       <workItem from="1544694994022" duration="1786000" />
       <workItem from="1544696893961" duration="1596000" />
       <workItem from="1544752886286" duration="1791000" />
+      <workItem from="1544775774855" duration="503000" />
     </task>
     <servers />
   </component>
@@ -1687,7 +1629,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176157000" />
+    <option name="totallyTimeSpent" value="176660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1699,11 +1641,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="822" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7269076" visible="true" weight="0.3004292" />
-      <window_info id="Structure" order="1" sideWeight="0.27309236" side_tool="true" visible="true" weight="0.3004292" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.72465754" visible="true" weight="0.30472103" />
+      <window_info id="Structure" order="1" sideWeight="0.27534246" side_tool="true" visible="true" weight="0.30472103" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -1857,20 +1798,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/go/src/html/template/template.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="371" selection-start-line="371" selection-end-line="371" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="1986" selection-start-line="1986" selection-end-line="1990" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/frontend/controller/serchresult.go">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -2181,7 +2108,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler_distributed/persist/server/itemsaveRpcServer.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state>
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
@@ -2195,17 +2122,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler_distributed/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        <state relative-caret-position="390">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/buffers/examples/splice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler_distributed/README">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maze/maze.go">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
