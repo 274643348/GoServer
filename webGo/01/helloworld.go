@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "learngo/GoServer/webGo/01/say"
 
-func main(){
-	fmt.Print("hello world")
+func main() {
+	diffName.DiffName();
 }
