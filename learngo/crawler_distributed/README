@@ -1,3 +1,11 @@
 ItemSaveRPC整合完成（实现存储分布式）：
 测试方式：1：itemsaveRpcServer服务器开启---------persist/server/itemsaveRpcServer----运行
          2：main项目开启---------main----运行
+
+
+
+分布式运行多个worker
+测试方法：1：itemsaveRpcServer服务器开启---------persist/server/itemsaveRpcServer----运行
+         2.1：worker 服务器开启----------worker/server/workerServer----运行
+         2.2：修改端口为"9001" --- worker 服务器开启----------worker/server/workerServer----运行
+         3：main项目开启---------main----运行

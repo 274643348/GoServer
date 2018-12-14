@@ -1,11 +1,11 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"learngo/GoServer/learngo/crawler/engine"
 	"learngo/GoServer/learngo/crawler/scheduler"
 	"learngo/GoServer/learngo/crawler/zhenai/parse"
+	"learngo/GoServer/learngo/crawler_distributed/config"
 	itemSever "learngo/GoServer/learngo/crawler_distributed/persist/Client"
 	"learngo/GoServer/learngo/crawler_distributed/rpcsupport"
 	worker "learngo/GoServer/learngo/crawler_distributed/worker/Client"
@@ -14,15 +14,15 @@ import (
 )
 
 
-var(
-	itemSaverHost = flag.String("itemsaver_host","","itemsaver host")
-
-	workerHosts = flag.String("worker_hosts","","worker hosts host")
-)
+//var(
+//	itemSaverHost = flag.String("itemsaver_host","","itemsaver host")
+//
+//	workerHosts = flag.String("worker_hosts","","worker hosts host")
+//)
 //终端输入：
 //--***=":1234"  --***=":9000,:9001"
 func main() {
-	flag.Parse()
+	//flag.Parse()
 	//engine.SimpleEngine{}.Run(engine.Request{
 	//	Url:"http://www.zhenai.com/zhenghun",
 	//	ParseFunc:parse.ParseCityList,
@@ -34,13 +34,13 @@ func main() {
 	//	ParseFunc:parse.PraseProfile,
 	//})
 
-	itemsaver ,err:=itemSever.ItemSaver(*itemSaverHost)
+	itemsaver ,err:=itemSever.ItemSaver(":1234")
 	if err != nil {
 		panic(err)
 	}
 
 
-	pool :=createClientPool(strings.Split(*workerHosts,","))
+	pool :=createClientPool(strings.Split(":9000,:9001",","))
 
 	processor,err := worker.CreaterWorkerProcess(&pool)
 	if err != nil {
@@ -52,15 +52,15 @@ func main() {
 		ItemChan:itemsaver,
 		Request:processor,
 	}
-	//e.Run(engine.Request{
-	//	Url:"http://www.zhenai.com/zhenghun",
-	//	ParseFunc:parse.ParseCityList,
-	//})
-
 	e.Run(engine.Request{
-		Url:"http://www.zhenai.com/zhenghun/zhengzhou",
-		Parse:engine.NewFuncParser(parse.ParseCity,"ParseCity"),
+		Url:"http://www.zhenai.com/zhenghun",
+		Parse:engine.NewFuncParser(parse.ParseCityList,config.ParseCityList),
 	})
+
+	//e.Run(engine.Request{
+	//	Url:"http://www.zhenai.com/zhenghun/zhengzhou",
+	//	Parse:engine.NewFuncParser(parse.ParseCity,config.ParseCity),
+	//})
 
 }
 
