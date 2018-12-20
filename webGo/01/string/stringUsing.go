@@ -10,6 +10,12 @@ func main() {
 	//s[0]='c';
 	fmt.Println(s);
 
+	sE := s;
+	sE = "hellow2"
+	//s[0]='c';
+	fmt.Printf("原始的sss:%v，现在的sss:%v\n", s, sE);
+
+
 	//修改字符串
 	c := []byte(s)
 	c[0] = 'c'
