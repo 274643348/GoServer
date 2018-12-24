@@ -20,7 +20,7 @@ func login(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	fmt.Println("method:",r.Method)
 	if r.Method == "GET" {
-		t,err:= template.ParseFiles("./web02-form/formInput//login.gtpl")////////注意文件路径
+		t,err:= template.ParseFiles("./web02-form/formInput01//login.gtpl")////////注意文件路径
 		if err != nil {
 			panic(err)
 			return

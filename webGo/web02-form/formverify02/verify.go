@@ -21,7 +21,7 @@ func login(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 
 	if r.Method == "GET" {
-		 t,err :=template.ParseFiles("./web02-form/formverify/login.gtpl")
+		 t,err :=template.ParseFiles("./web02-form/formverify02/login.gtpl")
 		if err != nil {
 			panic(err)
 			return
