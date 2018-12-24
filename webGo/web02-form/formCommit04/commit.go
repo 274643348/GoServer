@@ -10,6 +10,9 @@ import (
 	"time"
 )
 
+//防止表单多次提交
+//方案一：在服务区放置一个token唯一标示
+//方案二：在客户端Ajax模式递交表单，在提交后可以通过js来禁用递交按钮；
 func main() {
 	http.HandleFunc("/login",login)
 	err := http.ListenAndServe(":9090",nil)
