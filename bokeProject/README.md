@@ -26,3 +26,4 @@
 #####  3.下载bee(go get github.com/astaxie/bee)
 #####  3.使用bee工具初始化Beego项目(bee new beeBokerProject)
 #####  4.使用bee工具热编译Beego项目(cd beeBokerProject ;bee run;访问localhost:8080)
+#####  5.conf配置的使用，日志处理的操作
