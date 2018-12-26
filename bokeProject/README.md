@@ -28,7 +28,12 @@
 #####  4.使用bee工具热编译Beego项目(cd beeBokerProject ;bee run;访问localhost:8080)
 #####  5.conf配置的使用，日志处理的操作
 ### 第三节
-#####  1.前20分钟简单的模版使用;
+#####  1.前20分钟简单的模版使用(beego模版：go的原生);
 #####  2.分类和文章，创建数据结构，创建数据库;
+1. 使用beego的ORM使用(qbs暂时不用);
+2. 
 #####  3.借助bootStrap实现前端web页面的实现;
-1.下载bootstrap的css
+1. 下载bootstrap的css;
+2. 将css相关的文件复制到static；
+3. 在html中引入css(link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">)
+
