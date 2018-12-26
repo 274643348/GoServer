@@ -19,11 +19,16 @@
 
 
 # 开发过程记录
-#### 第一节创建项目目录结构和框架描述
-#### 第二节
+### 第一节创建项目目录结构和框架描述
+### 第二节
 #####  1.下载beego(go get github.com/astaxie/beego)
 #####  2.30分钟go底层http机制
 #####  3.下载bee(go get github.com/astaxie/bee)
 #####  3.使用bee工具初始化Beego项目(bee new beeBokerProject)
 #####  4.使用bee工具热编译Beego项目(cd beeBokerProject ;bee run;访问localhost:8080)
 #####  5.conf配置的使用，日志处理的操作
+### 第三节
+#####  1.前20分钟简单的模版使用;
+#####  2.分类和文章，创建数据结构，创建数据库;
+#####  3.借助bootStrap实现前端web页面的实现;
+1.下载bootstrap的css
