@@ -16,3 +16,13 @@
 
 # 前端
 ####  使用Bootstrap或google的开发者工具来实现
+
+
+# 开发过程记录
+#### 第一节创建项目目录结构和框架描述
+#### 第二节
+#####  1.下载beego(go get github.com/astaxie/beego)
+#####  2.30分钟go底层http机制
+#####  3.下载bee(go get github.com/astaxie/bee)
+#####  3.使用bee工具初始化Beego项目(bee new beeBokerProject)
+#####  4.使用bee工具热编译Beego项目(cd beeBokerProject ;bee run;访问localhost:8080)
