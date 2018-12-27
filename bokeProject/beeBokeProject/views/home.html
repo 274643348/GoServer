@@ -4,7 +4,8 @@
     <body>
         <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-                {{template  "navbar"}}
+                {{template  "navbar" .}}
+                {{/*必须加点才能注入数据*/}}
             </div>
         </div>
 
