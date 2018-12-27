@@ -48,7 +48,7 @@
 1. 实现分类view界面;"添加"和"删除"都是GET方式form(中增加input类型hidden，name为op，value为add )，href中直接"/category?op=del&id{{.Id}}"
 2. 增加"分类"路由category.go;Get方法中获取Input().Get("op"),根据不同的类型做不同的处理
 3. model模型增加数据库操作函数；CRUD:create read updata delete,参考model中的CRUM；
-4. 模型定义；参考beego中的model中的模型定义；`orm:"null;auto_now;type(datetime);index"`
+4. 模型定义；参考beego中的model中的模型定义；`orm:"null;auto_now;type(datetime);index"`，如果不为null，插入会报错；
 #####  3.go原生cookie的bug(参数中不能为空格)；
 
 #####
