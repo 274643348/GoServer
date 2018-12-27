@@ -16,27 +16,27 @@ const(
 
 type Category struct {
 	Id int64
-	Title string
-	Created time.Time
-	Views int64
-	TopicTime time.Time
-	TopicCount int64
-	TopicLastUserId int64
+	Title string `orm:"null"`
+	Created time.Time `orm:"null;auto_now;type(datetime);index"`
+	Views int64 `orm:"null"`
+	TopicTime time.Time  `orm:"null;auto_now;type(date);index"`
+	TopicCount int64 `orm:"null"`
+	TopicLastUserId int64 `orm:"null"`
 }
 
 type Topic struct {
 	Id int64
-	Uid int64
-	Title string
-	Content string
-	Attachment string
-	Created time.Time
-	Updated time.Time
-	Views int64
-	Author string
-	ReplyTime time.Time
-	ReplyCount int64
-	RepleyLastUerId int64
+	Uid int64 `orm:"null"`
+	Title string `orm:"null"`
+	Content string `orm:"null"`
+	Attachment string `orm:"null"`
+	Created time.Time `orm:"null;index"`
+	Updated time.Time `orm:"null;index"`
+	Views int64 `orm:"null"`
+	Author string `orm:"null"`
+	ReplyTime time.Time `orm:"null"`
+	ReplyCount int64 `orm:"null"`
+	RepleyLastUerId int64 `orm:"null"`
 }
 
 func RegisterDB(){
