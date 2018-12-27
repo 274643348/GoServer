@@ -10,4 +10,8 @@ func init() {
 
 	//注册登录路由
 	beego.Router("/login",&controllers.LoginController{})
+
+
+	//注册分类路由
+	beego.Router("/category",&controllers.CategoryController{})
 }
