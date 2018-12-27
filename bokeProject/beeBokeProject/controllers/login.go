@@ -16,6 +16,8 @@ func (this *LoginController) Get() {
 	if isExit {
 		this.Ctx.SetCookie("uname","",-1,"/")
 		this.Ctx.SetCookie("pwd","",-1,"/")
+		this.Redirect("/",301)
+		return
 	}
 
 	this.TplName = "login.html"
