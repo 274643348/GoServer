@@ -13,10 +13,11 @@ type LoginController struct {
 func (this *LoginController) Get() {
 	//如果携带的数据带有exit，即为退出
 	isExit := this.Input().Get("exit") == "true"
+	beego.Warning("ljy-------------" + this.Input().Get("exit"))
 	if isExit {
 		this.Ctx.SetCookie("uname","",-1,"/")
 		this.Ctx.SetCookie("pwd","",-1,"/")
-		this.Redirect("/",301)
+		this.Redirect("/",302)
 		return
 	}
 
@@ -45,7 +46,7 @@ func (this *LoginController) Post() {
 	}else {
 		beego.Warning("ljy----------------login-----------fail")
 	}
-	this.Redirect("/",301);
+	this.Redirect("/",302);
 
 	//防止页面渲染
 	return
