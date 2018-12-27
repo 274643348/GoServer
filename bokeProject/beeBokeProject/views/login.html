@@ -2,11 +2,25 @@
 <title>登录-我的 beego 博客</title>
 </head>
     <body>
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                {{template  "navbar" .}}
-                {{/*必须加点才能注入数据*/}}
-            </div>
+    <div class="page-header">
+        <div class="container" style="width:500px">
+            <form method="POST" action="/login">
+                <div class="form-group">
+                    <label >User Name</label>
+                    <input  class="form-control" placeholder="Enter account" name="uname">
+                </div>
+                <div class="form-group">
+                    <label >Password</label>
+                    <input type="password" class="form-control"  placeholder="Password" name="pwd">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="autoLogin"> 自动登录
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">登录</button>
+            </form>
         </div>
+    </div>
     </body>
 </html>

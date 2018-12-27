@@ -11,4 +11,7 @@ type HomeController struct {
 func (this *HomeController) Get() {
 	this.Data["IsHome"] = true;
 	this.TplName = "home.html"
+
+	//设置导航栏右边登录状态
+	this.Data["IsLogin"] = checkAccount(this.Ctx)
 }

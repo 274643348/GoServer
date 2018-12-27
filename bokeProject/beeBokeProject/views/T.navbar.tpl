@@ -7,4 +7,16 @@
         <li {{if .IsTop}} class = "active" {{end}}><a href="/topic">文章</a></li>
     </ur>
 
+    <div class = "pull-right">
+        <ul class ="nav navbar-nav">
+            {{if .IsLogin}}
+                <li ><a href="/login?exit=true">退出</a></li>
+            {{else}}
+                 <li ><a href="/login">管理员登录</a></li>
+            {{end}}
+        </ul>
+
+    </div>
+
+
 {{end}}
