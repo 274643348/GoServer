@@ -135,6 +135,17 @@ func ModifyTopic(tid,title,content string)error{
 	}
 	return  nil
 }
+func DeleteTopic(tid string)error{
+	tidNum,err :=strconv.ParseInt(tid,10,64);
+	if err != nil {
+		return  err
+	}
+	o := orm.NewOrm()
+	topic :=&Topic{Id:tidNum}
+	_,err =o.Delete(topic)
+	return err
+
+}
 //分类操作
 func AddCategory(name string)error{
 	//获取orm

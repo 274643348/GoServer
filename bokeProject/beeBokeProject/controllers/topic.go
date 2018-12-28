@@ -87,3 +87,17 @@ func(this * TopicController)Modify(){
 	this.Data["Topic"] = topic
 }
 
+//匹配自动路由中的"删除文章"
+func(this * TopicController)Delete(){
+
+	//"/login/view?id=12"
+	tid := this.Input().Get("tid");
+	err := models.DeleteTopic(tid);
+
+	if err != nil {
+		beego.Error(err.Error())
+	}
+	this.Redirect("/topic",302)
+	return
+}
+
