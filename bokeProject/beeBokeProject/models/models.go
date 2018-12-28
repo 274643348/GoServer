@@ -1,6 +1,7 @@
 package models
 
 import (
+	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/mattn/go-sqlite3"
 	"os"
@@ -55,7 +56,41 @@ func RegisterDB(){
 	//注册默认数据库，可以同时操作多个（必须有一个数据库default）
 	orm.RegisterDataBase("default",_SQLITE3_DRIVER,_DB_NAME,10)
 }
+//文章操作
+func AddTopic(title,content string)error{
+	beego.Error("ljy-----------AddTopic-----title:",title,"-----content:",content)
 
+	o := orm.NewOrm()
+
+	topic:=&Topic{
+		Title:title,
+		Content:content,
+		Created:time.Now(),
+		Updated:time.Now(),
+	}
+
+	_,err := o.Insert(topic)
+	return  err
+}
+
+func GetAllTopics(isDesc bool)([]*Topic,error){
+	o := orm.NewOrm()
+
+	topics := make([]*Topic,0)
+
+	qs:=o.QueryTable("topic")
+
+	var err error
+	if isDesc {
+		_,err = qs.OrderBy("-created").All(&topics)
+	}else{
+		_,err = qs.All(&topics)
+	}
+
+	return topics,err
+}
+
+//分类操作
 func AddCategory(name string)error{
 	//获取orm
 	o := orm.NewOrm()
