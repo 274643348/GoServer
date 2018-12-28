@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
+	"learngo/GoServer/bokeProject/beeBokeProject/models"
 )
 
 type HomeController struct {
@@ -14,4 +15,11 @@ func (this *HomeController) Get() {
 
 	//设置导航栏右边登录状态
 	this.Data["IsLogin"] = checkAccount(this.Ctx)
+
+	topics,err := models.GetAllTopics(true);
+	if err != nil {
+		beego.Error(err.Error())
+	}else {
+		this.Data["Topics"] = topics
+	}
 }
