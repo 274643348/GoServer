@@ -27,6 +27,7 @@ type Category struct {
 
 type Topic struct {
 	Id int64
+	Category string `orm:"null"`
 	Uid int64 `orm:"null"`
 	Title string `orm:"null"`
 	Content string `orm:"null"`
@@ -57,13 +58,14 @@ func RegisterDB(){
 	orm.RegisterDataBase("default",_SQLITE3_DRIVER,_DB_NAME,10)
 }
 //文章操作
-func AddTopic(title,content string)error{
+func AddTopic(title,category,content string)error{
 	beego.Error("ljy-----------AddTopic-----title:",title,"-----content:",content)
 
 	o := orm.NewOrm()
 
 	topic:=&Topic{
 		Title:title,
+		Category:category,
 		Content:content,
 		Created:time.Now(),
 		Updated:time.Now(),
@@ -118,7 +120,7 @@ func GetTopic(tid string)(*Topic,error){
 	return topic,err
 }
 
-func ModifyTopic(tid,title,content string)error{
+func ModifyTopic(tid,title,category,content string)error{
 	tidNum,err :=strconv.ParseInt(tid,10,64);
 	if err != nil {
 		return  err
@@ -130,6 +132,7 @@ func ModifyTopic(tid,title,content string)error{
 	if err =o.Read(topic); err== nil{
 		topic.Title = title
 		topic.Content = content
+		topic.Category = category
 		topic.Updated = time.Now()
 		o.Update(topic)
 	}
