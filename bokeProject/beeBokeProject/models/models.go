@@ -90,6 +90,51 @@ func GetAllTopics(isDesc bool)([]*Topic,error){
 	return topics,err
 }
 
+func GetTopic(tid string)(*Topic,error){
+	tidName,err :=strconv.ParseInt(tid,10,64);
+	if err != nil {
+		return  nil,err
+	}
+
+	o := orm.NewOrm()
+
+	topic := new(Topic)
+
+	//获取topic列表
+	qs := o.QueryTable("topic")
+
+	//获取id所对应的topic
+	err = qs.Filter("id",tidName).One(topic)
+	if err != nil {
+		return  nil,err
+	}
+
+	//增加浏览次数
+	topic.Views ++;
+	//更新数据
+	_,err = o.Update(topic)
+
+
+	return topic,err
+}
+
+func ModifyTopic(tid,title,content string)error{
+	tidNum,err :=strconv.ParseInt(tid,10,64);
+	if err != nil {
+		return  err
+	}
+
+	o := orm.NewOrm()
+	topic := &Topic{Id:tidNum}
+
+	if err =o.Read(topic); err== nil{
+		topic.Title = title
+		topic.Content = content
+		topic.Updated = time.Now()
+		o.Update(topic)
+	}
+	return  nil
+}
 //分类操作
 func AddCategory(name string)error{
 	//获取orm

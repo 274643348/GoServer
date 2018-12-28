@@ -30,9 +30,14 @@ func(this * TopicController)Post(){
 
 	title := this.Input().Get("title")
 	content := this.Input().Get("content")
-
+	tid := this.Input().Get("tid");
 	var err error
-	err = models.AddTopic(title,content)
+	if len(tid) == 0 {
+		err = models.AddTopic(title,content)
+	}else{
+		err = models.ModifyTopic(tid,title,content)
+	}
+
 	if err != nil {
 		beego.Error(err)
 	}
@@ -43,5 +48,42 @@ func(this * TopicController)Post(){
 //匹配自动路由中的"增加文章"
 func(this * TopicController)Add(){
 	this.TplName = "topic_add.html"
+}
+
+//匹配自动路由中的"显示文章"
+func(this * TopicController)View(){
+	this.TplName = "topic_view.html"
+
+	//"/login/view?id=12"
+	//tid := this.Input().Get("id");
+
+	//"/login/view/12"
+	tid := this.Ctx.Input.Param("0");
+	topic,err := models.GetTopic(tid);
+
+	if err != nil {
+		beego.Error(err.Error())
+	}
+
+	//Tid用于修改操作的凭证
+	this.Data["Tid"] = tid
+	this.Data["Topic"] = topic
+}
+
+//匹配自动路由中的"修改文章"
+func(this * TopicController)Modify(){
+	this.TplName = "topic_modify.html"
+
+	//"/login/view?id=12"
+	tid := this.Input().Get("tid");
+	topic,err := models.GetTopic(tid);
+
+	if err != nil {
+		beego.Error(err.Error())
+	}
+
+	//Tid用于修改操作的凭证
+	this.Data["Tid"] = tid
+	this.Data["Topic"] = topic
 }
 

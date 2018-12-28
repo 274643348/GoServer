@@ -1,0 +1,23 @@
+{{template  "header"}}
+    <title>添加文章-我的 beego 博客</title>
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            {{template  "navbar" .}}
+            {{/*必须加点才能注入数据*/}}
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>{{.Topic.Title}}</h1>
+            <a href="/topic/modify?tid={{.Tid}}" class= "btn btn-default">修改文章</a>
+            {{.Topic.Content}}
+
+        </div>
+    </div>
+
+</body>
+</html>
