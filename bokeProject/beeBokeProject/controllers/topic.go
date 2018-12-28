@@ -64,11 +64,23 @@ func(this * TopicController)View(){
 
 	if err != nil {
 		beego.Error(err.Error())
+		this.Redirect("/",302)
+		return
 	}
 
 	//Tid用于修改操作的凭证
 	this.Data["Tid"] = tid
 	this.Data["Topic"] = topic
+
+	replies,err := models.GetAllReplies(tid)
+	if err != nil {
+		beego.Error(err.Error())
+		return
+	}
+	this.Data["Replies"] = replies
+	this.Data["IsLogin"] = checkAccount(this.Ctx)
+
+
 }
 
 //匹配自动路由中的"修改文章"

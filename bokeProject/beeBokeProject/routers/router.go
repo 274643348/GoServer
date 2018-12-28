@@ -20,4 +20,12 @@ func init() {
 
     //自动路由(后缀必须是Controller，访问/Topic/Add，就会去调用TopicController中的Add)
 	beego.AutoRouter(&controllers.TopicController{})
-}
+
+    //回复路由
+    beego.Router("/reply",&controllers.ReplyController{})
+
+    //"/reply/add"的post传递到Add（）中
+	beego.Router("/reply/add",&controllers.ReplyController{},"post:Add")
+	beego.Router("/reply/delete",&controllers.ReplyController{},"get:Delete")
+
+    }

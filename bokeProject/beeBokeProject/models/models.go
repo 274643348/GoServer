@@ -41,6 +41,14 @@ type Topic struct {
 	RepleyLastUerId int64 `orm:"null"`
 }
 
+type Comment struct {
+	Id int64
+	Tid int64 `orm:"null"`
+	NickName string `orm:"null"`
+	Content string `orm:size(1000);null`
+	Created time.Time `orm:"index;null"`
+}
+
 func RegisterDB(){
 	if _,err :=os.Stat(_DB_NAME); err!= nil {
 		os.MkdirAll(path.Dir(_DB_NAME),os.ModePerm)
@@ -49,13 +57,58 @@ func RegisterDB(){
 	}
 
 	//注册模型
-	orm.RegisterModel(new(Category),new(Topic))
+	orm.RegisterModel(new(Category),new(Topic),new(Comment))
 
 	//注册驱动
 	orm.RegisterDriver(_SQLITE3_DRIVER,orm.DRSqlite)
 
 	//注册默认数据库，可以同时操作多个（必须有一个数据库default）
 	orm.RegisterDataBase("default",_SQLITE3_DRIVER,_DB_NAME,10)
+}
+
+//回复操作
+func AddReply(tid,nickname,content string)error{
+	tidNum,err := strconv.ParseInt(tid,10,64)
+	if err != nil {
+		return err
+	}
+
+	o :=orm.NewOrm()
+	reply :=&Comment{
+		Tid:tidNum,
+		NickName:nickname,
+		Content:content,
+		Created:time.Now(),
+	}
+	_,err = o.Insert(reply)
+	return  err
+}
+
+func GetAllReplies(tid string)([]*Comment,error){
+	tidNum,err := strconv.ParseInt(tid,10,64)
+	if err != nil {
+		return nil,err
+	}
+
+	o :=orm.NewOrm()
+	reply :=make([]*Comment,0)
+	qs :=o.QueryTable("comment")
+	_,err =qs.Filter("tid",tidNum).All(&reply);
+	return reply,err
+}
+
+func DeleteReply(rid string)error{
+	ridNum,err := strconv.ParseInt(rid,10,64)
+	if err != nil {
+		return err
+	}
+
+	o :=orm.NewOrm()
+	reply := &Comment{
+		Id:ridNum,
+	}
+	_,err = o.Delete(reply)
+	return  err
 }
 //文章操作
 func AddTopic(title,category,content string)error{
