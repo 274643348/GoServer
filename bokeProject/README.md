@@ -65,3 +65,19 @@
 
 ##### 4.topic.html展示界面增加删除按钮；
 1. "删除"通过 href="/topic/delete?tid={{.Tid}}",自由路由访问delete()中进行删除，然后302重定向到"/topic"
+
+### 第六节 (1.增加回复功能;2.增加首页分类功能)
+##### 1.给文章的增加分类(8分钟)
+1. topic_add和topic_modify增加"分类"元素
+2. models中的Topic增加Category属性；
+3. models中修改AddTopic()和Modify();topic.go修改相关接口；
+##### 2.文章的"回复"的增删改(8-39分钟)
+1. models中添加Comment数据模型；---注意:新建模型要在RegisterModel中注册;
+2. models中实现对表"comment"的增删读的接口;
+3. 定义特定路由"beego.Router("/reply/add",&controllers.ReplyController{},"post:Add")"(只允许post的过来的Add);
+4. topic_view.html增加"显示replies"和"add reply"相关组件；
+---注意:模版中的循环中使用循环外的数据要使用"模版变量"来接管；
+---注意:通过IsLogin来判断是否可以删除回复;
+##### 3.通过分类显示不同分类的文章以及显示不同分类的文章数；
+1. 修改home.html增加"文章分类"相关组件；
+2. 根据cate参数来过滤文章信息显示在home.html；
