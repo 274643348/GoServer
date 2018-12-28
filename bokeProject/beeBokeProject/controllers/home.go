@@ -16,10 +16,19 @@ func (this *HomeController) Get() {
 	//设置导航栏右边登录状态
 	this.Data["IsLogin"] = checkAccount(this.Ctx)
 
-	topics,err := models.GetAllTopics(true);
+	cate := this.Input().Get("cate")
+
+	topics,err := models.GetAllTopics(cate,true);
 	if err != nil {
 		beego.Error(err.Error())
 	}else {
 		this.Data["Topics"] = topics
 	}
+
+	categories,err := models.GetAllCtegories()
+	if err != nil {
+		beego.Error(err.Error())
+		return
+	}
+	this.Data["Categories"] = categories
 }

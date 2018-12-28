@@ -13,7 +13,7 @@ func(this * TopicController)Get(){
 	this.Data["IsTopic"] = true
 	this.TplName = "topic.html"
 
-	topics,err := models.GetAllTopics(false)
+	topics,err := models.GetAllTopics("",false)
 	if err != nil {
 		beego.Error(err)
 	}else {
