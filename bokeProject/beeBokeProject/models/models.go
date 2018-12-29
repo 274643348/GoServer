@@ -7,6 +7,7 @@ import (
 	"os"
 	"path"
 	"strconv"
+	"strings"
 	"time"
 )
 
@@ -26,19 +27,20 @@ type Category struct {
 }
 
 type Topic struct {
-	Id int64
-	Category string `orm:"null"`
-	Uid int64 `orm:"null"`
-	Title string `orm:"null"`
-	Content string `orm:"null"`
-	Attachment string `orm:"null"`
-	Created time.Time `orm:"null;index"`
-	Updated time.Time `orm:"null;index"`
-	Views int64 `orm:"null"`
-	Author string `orm:"null"`
-	ReplyTime time.Time `orm:"null"`
-	ReplyCount int64 `orm:"null"`
-	RepleyLastUerId int64 `orm:"null"`
+	Id              int64
+	Category        string    `orm:"null"`
+	Labels          string    `orm:"null""`
+	Uid             int64     `orm:"null"`
+	Title           string    `orm:"null"`
+	Content         string    `orm:"null"`
+	Attachment      string    `orm:"null"`
+	Created         time.Time `orm:"null;index"`
+	Updated         time.Time `orm:"null;index"`
+	Views           int64     `orm:"null"`
+	Author          string    `orm:"null"`
+	ReplyTime       time.Time `orm:"null"`
+	ReplyCount      int64     `orm:"null"`
+	RepleyLastUerId int64     `orm:"null"`
 }
 
 type Comment struct {
@@ -157,17 +159,32 @@ func DeleteReply(rid string)error{
 	return  err
 }
 //文章操作
-func AddTopic(title,category,content string)error{
-	beego.Error("ljy-----------AddTopic-----title:",title,"-----content:",content)
+func AddTopic(title,category,label,content string)error{
+	//处理标签
+	labels :="$"+strings.Join(strings.Split(label," "),"#$") + "#"
+	//"beego orm"---[beego rom]---beego#$orm---$beego#$orm#
+
+
+	//空格作为多个标签的分隔符
+	//beego----$beego#
+	//orm------$orm#
+	//beego orm----$beego#$orm#
+
+	//匹配时$XXX#
+	//防止bee|beego这种匹配导致搜索bee时搜到beego；
+
+
+	//beego.Error("ljy-----------AddTopic-----title:",title,"-----content:",content)
 
 	o := orm.NewOrm()
 
 	topic:=&Topic{
-		Title:title,
-		Category:category,
-		Content:content,
-		Created:time.Now(),
-		Updated:time.Now(),
+		Title:    title,
+		Category: category,
+		Labels:   labels,
+		Content:  content,
+		Created:  time.Now(),
+		Updated:  time.Now(),
 	}
 
 	_,err := o.Insert(topic)
@@ -187,8 +204,8 @@ func AddTopic(title,category,content string)error{
 	return  err
 }
 
-func GetAllTopics(cate string ,isDesc bool)([]*Topic,error){
-	beego.Error("ljy----------alltopics---cate")
+func GetAllTopics(cate,label string ,isDesc bool)([]*Topic,error){
+	beego.Error("ljy----------label:",label)
 	o := orm.NewOrm()
 
 	topics := make([]*Topic,0)
@@ -199,6 +216,9 @@ func GetAllTopics(cate string ,isDesc bool)([]*Topic,error){
 	if isDesc {
 		if len(cate) != 0 {
 			qs = qs.Filter("category",cate)
+		}
+		if len(label) != 0 {
+			qs = qs.Filter("labels__contains",label)
 		}
 		_,err = qs.OrderBy("-created").All(&topics)
 	}else{
@@ -232,11 +252,14 @@ func GetTopic(tid string)(*Topic,error){
 	//更新数据
 	_,err = o.Update(topic)
 
-
+	topic.Labels = strings.Replace(strings.Replace(topic.Labels,"#"," ",-1),"$","",-1)
 	return topic,err
 }
 
-func ModifyTopic(tid,title,category,content string)error{
+func ModifyTopic(tid,title,category, label,content string)error{
+	//处理标签
+	labels :="$"+strings.Join(strings.Split(label," "),"#$") + "#"
+
 	tidNum,err :=strconv.ParseInt(tid,10,64);
 	if err != nil {
 		return  err
@@ -251,6 +274,7 @@ func ModifyTopic(tid,title,category,content string)error{
 		
 		topic.Title = title
 		topic.Content = content
+		topic.Labels = labels
 		topic.Category = category
 		topic.Updated = time.Now()
 		_,err =o.Update(topic)

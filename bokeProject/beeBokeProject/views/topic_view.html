@@ -12,8 +12,14 @@
 
     <div class="page-header">
         <div class="container">
+            {{$label := .Labels}}
             <h1>{{.Topic.Title}}</h1>
             <a href="/topic/modify?tid={{.Tid}}" class= "btn btn-default">修改文章</a>
+            <h5>
+                {{range $label}}
+                    <a href="/?lable={{.}}">{{.}}</a>
+                {{end}}
+            </h5>
             {{.Topic.Content}}
 
         </div>

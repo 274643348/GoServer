@@ -3,6 +3,7 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"learngo/GoServer/bokeProject/beeBokeProject/models"
+	"strings"
 )
 
 type TopicController struct {
@@ -13,7 +14,7 @@ func(this * TopicController)Get(){
 	this.Data["IsTopic"] = true
 	this.TplName = "topic.html"
 
-	topics,err := models.GetAllTopics("",false)
+	topics,err := models.GetAllTopics("","",false)
 	if err != nil {
 		beego.Error(err)
 	}else {
@@ -32,11 +33,12 @@ func(this * TopicController)Post(){
 	content := this.Input().Get("content")
 	category := this.Input().Get("category")
 	tid := this.Input().Get("tid");
+	label := this.Input().Get("lable");
 	var err error
 	if len(tid) == 0 {
-		err = models.AddTopic(title,category,content)
+		err = models.AddTopic(title,category,label,content)
 	}else{
-		err = models.ModifyTopic(tid,title,category,content)
+		err = models.ModifyTopic(tid,title,category,label,content)
 	}
 
 	if err != nil {
@@ -71,6 +73,7 @@ func(this * TopicController)View(){
 	//Tid用于修改操作的凭证
 	this.Data["Tid"] = tid
 	this.Data["Topic"] = topic
+	this.Data["Labels"] = strings.Split(topic.Labels," ");
 
 	replies,err := models.GetAllReplies(tid)
 	if err != nil {
