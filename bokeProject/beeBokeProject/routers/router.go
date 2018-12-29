@@ -28,4 +28,10 @@ func init() {
 	beego.Router("/reply/add",&controllers.ReplyController{},"post:Add")
 	beego.Router("/reply/delete",&controllers.ReplyController{},"get:Delete")
 
+
+
+	//作为静态文件（应该放在static下，我觉得）
+	//beego.SetStaticPath("/attachment","attachment")
+	beego.Router("/attachment/:all",&controllers.AttachController{})
+
     }

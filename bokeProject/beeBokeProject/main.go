@@ -22,8 +22,7 @@ func main() {
 	//创建附件目录
 	os.MkdirAll("attachment",os.ModePerm)
 
-	//作为静态文件（应该放在static下，我觉得）
-	beego.SetStaticPath("/attachment","attachment")
+
 
 	beego.Run()
 }
