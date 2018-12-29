@@ -81,3 +81,16 @@
 ##### 3.通过分类显示不同分类的文章以及显示不同分类的文章数；
 1. 修改home.html增加"文章分类"相关组件；
 2. 根据cate参数来过滤文章信息显示在home.html；
+
+### 第七节 (1.文章增删改时更新对应分类的文章统计数,评论增删时更新文章的"评论数"和"回复时间";2.文章增加标签)
+1. 文章增-根据文章的"分类名称"增加对应的category数据进行TopicCount++
+2. 文章删-根据文章的"分类名称"增加对应的category数据进行TopicCount--
+3. 文章改-根据文章Tid,获取老得的"分类名称"增加对应的category数据进行TopicCount--,对新的"分类名称"对应的category数据进行TopicCount++；
+4. 回复同上；不过回复被删除后更新"回复时间",要获取当前Tid的所有Comment对应的数据并根据时间排序,若果comment不存在,要做0情况的处理;
+5. 标签的增加:1:标签获取后"xxx ddd www",通过处理改为"$xxx#$ddd#$www#"存放到数据库，读取是也要转回"xxx ddd www"；
+
+    5.1格式化：labels :="$"+strings.Join(strings.Split(label," "),"#$") + "#"
+    
+    5.2反格式化：topic.Labels = strings.Replace(strings.Replace(topic.Labels,"#"," ",-1),"$","",-1)
+6. 修改GetAllTopics()增加label过滤；注意对labels中内容查找时qs.Filter("labels__contains",label);
+7. 模版变量使用,如果range的是一个普通类型数组,用{{.}}来接受数据;
