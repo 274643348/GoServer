@@ -3,6 +3,7 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"learngo/GoServer/bokeProject/beeBokeProject/models"
+	"path"
 	"strings"
 )
 
@@ -34,11 +35,26 @@ func(this * TopicController)Post(){
 	category := this.Input().Get("category")
 	tid := this.Input().Get("tid");
 	label := this.Input().Get("lable");
-	var err error
+
+	_,fh,err := this.GetFile("attachment");
+	if err != nil {
+		beego.Error(err)
+	}
+
+	var attachment string
+	if fh !=nil {
+		attachment = fh.Filename
+		beego.Info("ljy------attachment:",attachment)
+		err = this.SaveToFile("attachment",path.Join("attachment",attachment))
+		if err != nil{
+			beego.Error(err)
+		}
+	}
+
 	if len(tid) == 0 {
-		err = models.AddTopic(title,category,label,content)
+		err = models.AddTopic(title,category,label,content,attachment)
 	}else{
-		err = models.ModifyTopic(tid,title,category,label,content)
+		err = models.ModifyTopic(tid,title,category,label,content,attachment)
 	}
 
 	if err != nil {

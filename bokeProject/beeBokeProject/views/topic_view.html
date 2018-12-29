@@ -16,11 +16,15 @@
             <h1>{{.Topic.Title}}</h1>
             <a href="/topic/modify?tid={{.Tid}}" class= "btn btn-default">修改文章</a>
             <h5>
+                标签:
                 {{range $label}}
                     <a href="/?lable={{.}}">{{.}}</a>
                 {{end}}
             </h5>
+            内容:
             {{.Topic.Content}}
+
+            <h5>文章附件:<a href="/attachment/{{.Topic.Attachment}}">{{.Topic.Attachment}}</a></h5>
 
         </div>
 

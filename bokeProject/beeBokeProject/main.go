@@ -5,6 +5,7 @@ import (
 	"learngo/GoServer/bokeProject/beeBokeProject/models"
 	_ "learngo/GoServer/bokeProject/beeBokeProject/routers"
 	"github.com/astaxie/beego"
+	"os"
 )
 
 func init(){
@@ -18,6 +19,11 @@ func main() {
 	//自动建表
 	orm.RunSyncdb("default",false,true);
 
+	//创建附件目录
+	os.MkdirAll("attachment",os.ModePerm)
+
+	//作为静态文件（应该放在static下，我觉得）
+	beego.SetStaticPath("/attachment","attachment")
 
 	beego.Run()
 }

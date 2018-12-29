@@ -159,7 +159,7 @@ func DeleteReply(rid string)error{
 	return  err
 }
 //文章操作
-func AddTopic(title,category,label,content string)error{
+func AddTopic(title,category,label,content,attachment string)error{
 	//处理标签
 	labels :="$"+strings.Join(strings.Split(label," "),"#$") + "#"
 	//"beego orm"---[beego rom]---beego#$orm---$beego#$orm#
@@ -183,6 +183,7 @@ func AddTopic(title,category,label,content string)error{
 		Category: category,
 		Labels:   labels,
 		Content:  content,
+		Attachment: attachment,
 		Created:  time.Now(),
 		Updated:  time.Now(),
 	}
@@ -256,7 +257,7 @@ func GetTopic(tid string)(*Topic,error){
 	return topic,err
 }
 
-func ModifyTopic(tid,title,category, label,content string)error{
+func ModifyTopic(tid,title,category, label,content,attachment string)error{
 	//处理标签
 	labels :="$"+strings.Join(strings.Split(label," "),"#$") + "#"
 
@@ -265,15 +266,17 @@ func ModifyTopic(tid,title,category, label,content string)error{
 		return  err
 	}
 
-	var oldCate string
+	var oldCate , oldAttach string
 	o := orm.NewOrm()
 	topic := &Topic{Id:tidNum}
 
 	if err =o.Read(topic); err== nil{
 		oldCate = topic.Category
-		
+		oldAttach = topic.Attachment
+
 		topic.Title = title
 		topic.Content = content
+		topic.Attachment = attachment
 		topic.Labels = labels
 		topic.Category = category
 		topic.Updated = time.Now()
@@ -282,7 +285,10 @@ func ModifyTopic(tid,title,category, label,content string)error{
 			return  err
 		}
 	}
-	
+
+	//删除旧文件
+	os.Remove(path.Join("attachment",oldAttach));
+
 	//更新分类统计
 	if len(oldCate) > 0 {
 		cate :=new(Category)
