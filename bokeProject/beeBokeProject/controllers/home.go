@@ -21,6 +21,9 @@ func (this *HomeController) Get() {
 	}
 	this.Data["Lang"] = this.Lang
 
+	//通过控制器来处理
+	this.Data["Hi"] = this.Tr("hi")
+
 	this.Data["IsHome"] = true;
 	this.TplName = "home.html"
 
