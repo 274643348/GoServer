@@ -2,14 +2,25 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
+	"github.com/beego/i18n"
 	"learngo/GoServer/bokeProject/beeBokeProject/models"
 )
 
 type HomeController struct {
 	beego.Controller
+	i18n.Locale
 }
 
 func (this *HomeController) Get() {
+
+	//根据表单数据设置语言；
+	if this.Input().Get("lang") == "zh-CN"{
+		this.Lang = "zh-CN"
+	}else{
+		this.Lang = "en-US"
+	}
+	this.Data["Lang"] = this.Lang
+
 	this.Data["IsHome"] = true;
 	this.TplName = "home.html"
 
