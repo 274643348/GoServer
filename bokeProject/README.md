@@ -94,3 +94,11 @@
     5.2反格式化：topic.Labels = strings.Replace(strings.Replace(topic.Labels,"#"," ",-1),"$","",-1)
 6. 修改GetAllTopics()增加label过滤；注意对labels中内容查找时qs.Filter("labels__contains",label);
 7. 模版变量使用,如果range的是一个普通类型数组,用{{.}}来接受数据;
+
+### 第八节 (国际化支持)
+1. 通过i18n来实现；下载go get github.com/beego/i18n；
+2. 实现文件locale_en-US.ini和locale_zh-CN.ini；
+3. 注册文件i18n.SetMessage加载本地文件；
+4. 注册模版函数beego.AddFuncMap("i18n", i18n.Tr)
+5. 模版中使用<h3>{{i18n .Lang "hi"}}</h3>
+6. 分区功能<h3>{{i18n .Lang "hi.hi"}}</h3>
